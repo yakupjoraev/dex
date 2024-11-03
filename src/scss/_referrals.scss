@@ -1,0 +1,59 @@
+.referrals {
+  padding: 50px 0;
+  min-height: calc(100dvh - 140px);
+
+  .logo {
+    margin-bottom: 32px;
+  }
+
+  // .referrals__inner
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  // .referrals__picture
+
+  &__picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+  }
+
+  // .referrals__texts
+
+  &__texts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  // .referrals__title
+
+  &__title {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 24px;
+    text-align: center;
+    color: var(--green-2);
+  }
+
+  // .referrals__text
+
+  &__text {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 140%;
+    text-align: center;
+  }
+
+  // .referrals__btn
+
+  &__btn {
+    margin-top: auto;
+  }
+}

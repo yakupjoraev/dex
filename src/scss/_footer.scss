@@ -1,0 +1,115 @@
+// Footer
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 14px 30px 20px;
+  box-shadow: 0 -10px 20px 0 rgba(54, 54, 54, 0.25);
+  background: #101010;
+
+  @media (max-width: 389px) {
+    padding: 14px 16px 20px;
+  }
+
+  // .footer__inner
+
+  &__inner {}
+
+  // .footer__list
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+
+    @media (max-width: 389px) {
+      column-gap: 16px;
+    }
+  }
+
+  // .footer__item
+
+  &__item {
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -24px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 8px;
+      height: 8px;
+      border-radius: 100%;
+      background-color: var(--green-2);
+      user-select: none;
+      pointer-events: none;
+      z-index: -1;
+      opacity: 0;
+      transition: opacity 0.2s linear;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -24px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 32px;
+      height: 32px;
+      border-radius: 100%;
+      background-color: var(--green-2);
+      filter: blur(25px);
+      user-select: none;
+      pointer-events: none;
+      z-index: -1;
+      opacity: 0;
+      transition: opacity 0.2s linear;
+    }
+
+    &.active {
+
+      &::before,
+      &::after {
+        opacity: 1;
+      }
+
+      .footer__link-text {
+        font-weight: 700;
+        color: var(--green-2);
+      }
+
+      .footer__link-img {
+        filter: brightness(0) saturate(100%) invert(52%) sepia(70%) saturate(6327%) hue-rotate(150deg) brightness(95%) contrast(94%);
+      }
+    }
+  }
+
+  // .footer__link
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2px;
+  }
+
+  // .footer__link-img
+
+  &__link-img {}
+
+  // .footer__link-text
+
+  &__link-text {
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 11px;
+    text-align: center;
+    color: var(--text2);
+  }
+}

@@ -1,0 +1,134 @@
+// Header
+.header {
+  padding: 10px;
+
+  // .header__inner
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 16px;
+  }
+
+  // .header__search
+
+  &__search {
+    position: relative;
+    z-index: 1;
+    flex: 1 1 auto;
+  }
+
+  // .header__search-input
+
+  &__search-input {
+    padding: 12px 40px 12px 16px;
+    width: 100%;
+    background: #272728;
+    border: 1px solid transparent;
+    outline: 0;
+    border-radius: 8px;
+    height: 32px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--text-1);
+
+    &::placeholder {
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 12px;
+      color: var(--text2);
+    }
+  }
+
+  // .header__search-icon
+
+  &__search-icon {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  // .header__right
+
+  &__right {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+  }
+
+  // .header__notifications
+
+  &__notifications {}
+
+  // .header__notifications-icon
+
+  &__notifications-icon {}
+}
+
+// .burger
+
+.burger {
+  display: block;
+  position: relative;
+  height: 20px;
+  width: 20px;
+  z-index: 101;
+  cursor: pointer;
+
+  &.active-burger {
+    &:before {
+      background: #089981;
+      transform: rotate(45deg);
+      transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+      top: 8px;
+    }
+
+    &:after {
+      width: 100%;
+      background: #089981;
+      transform: rotate(-45deg);
+      bottom: 10px;
+      transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+    }
+
+    & span {
+      transform: scale(0);
+    }
+  }
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #089981;
+    transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+    border-radius: 4px;
+  }
+
+  &:before {
+    top: 2px;
+  }
+
+  &::after {
+    width: 70%;
+    bottom: 2px;
+    right: 0;
+  }
+
+  span {
+    position: absolute;
+    top: 9px;
+    right: 0;
+    width: 85%;
+    background: #089981;
+    height: 2px;
+    border-radius: 4px;
+    transform: scale(1);
+    transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+  }
+}

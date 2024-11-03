@@ -1,0 +1,30 @@
+// Global SCSS-files imports
+@import './fonts';
+@import './vars';
+@import './reset';
+@import './global';
+@import './base';
+
+// Sections or Pages SCSS-files imports
+@import './header';
+@import './logo';
+@import './start';
+@import './main';
+@import './nav';
+@import './filters-head';
+@import './table';
+@import './inputs';
+@import './modals';
+@import './filters-page';
+@import './advanced';
+@import './referrals';
+@import './accordion';
+@import './support';
+@import './referrals';
+@import './pump-vision';
+@import './token-explorer';
+@import './tabs';
+@import './footer';
+
+// Libs
+// @import './libs/swiper';

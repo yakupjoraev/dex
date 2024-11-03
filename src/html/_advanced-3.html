@@ -1,0 +1,62 @@
+<div class="advanced">
+  <form action="#" class="advanced__form">
+    <div class="advanced__head">
+      <div class="heading">
+        <h1 class="heading__title">Custom Strategy Settings</h1>
+      </div>
+    </div>
+
+    <div class="advanced__border"></div>
+    <div class="advanced__content">
+      <div class="input-rows">
+        <div class="input-row">
+          <label class="input-row__label" for="">Sell PRIORITY FEE</label>
+          <div class="input-row__wrapper">
+            <input class="input-row__input" type="text" placeholder="0">
+            <img width="16" height="16" src="./img/icons/gas-pump-green.svg" alt="gas-pump-green icon">
+          </div>
+        </div>
+
+        <div class="input-row">
+          <label class="input-row__label" for="">Sell Slippage Limit</label>
+          <div class="input-row__wrapper">
+            <input class="input-row__input" type="text" placeholder="20%">
+            <img width="16" height="16" src="./img/icons/falling-green.svg" alt="falling-green icon">
+          </div>
+        </div>
+
+        <div class="input-row">
+          <label class="input-row__label" for="">Sell MEV Protection</label>
+
+          <div class="input-row__radios">
+            <div class="input-row__radio">
+              <input class="input-row__radio-input" type="radio" name="Sell MEV Protection" id="sell-mev-1" checked>
+
+              <label class="input-row__radio-label" for="sell-mev-1">
+                <span>Disabled</span>
+              </label>
+            </div>
+
+            <div class="input-row__radio">
+              <input class="input-row__radio-input" type="radio" name="Sell MEV Protection" id="sell-mev-2">
+
+              <label class="input-row__radio-label" for="sell-mev-2">
+                <span>Enabled</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-row">
+          <label class="input-row__label" for="">Sell Bribe <span>Optional</span></label>
+          <div class="input-row__wrapper">
+            <input class="input-row__input" type="text" placeholder="0">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="advanced__footer">
+      <button class="advanced__btn btn  btn--large">Save</button>
+    </div>
+  </form>
+</div>

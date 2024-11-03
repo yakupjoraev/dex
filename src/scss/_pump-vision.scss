@@ -1,0 +1,42 @@
+.pump-vision {}
+
+.portfolio-analyzer {
+  .table-wrapper {
+    border: 1px solid #212121;
+    border-radius: 4px;
+    height: calc(100dvh - 200px);
+
+    &.table-wrapper--fit-height {
+      height: auto;
+    }
+
+  }
+
+
+  .table {
+
+    thead {
+      border: 0;
+    }
+
+    th:first-child {
+      padding-left: 10px;
+    }
+
+    td:first-child {
+      padding-left: 10px;
+    }
+
+    td:last-child {
+      padding-right: 10px;
+    }
+
+    .table__bold-text {
+      font-size: 12px;
+    }
+
+    .table__left-btn {
+      left: 0;
+    }
+  }
+}
