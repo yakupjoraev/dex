@@ -259,6 +259,10 @@ body.locked {
   min-height: 48px;
 }
 
+.btn--red {
+  background-color: var(--red);
+}
+
 .second-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1222,6 +1226,30 @@ body.locked {
 
 .table-wrapper--not-padding {
   padding: 0;
+}
+
+.table__text--mini {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 2px;
+     -moz-column-gap: 2px;
+          column-gap: 2px;
+  font-size: 9px;
+  font-weight: 500;
+}
+
+.filters-head__row .table__info .table__bold-text {
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.filters-head__row .table__info p {
+  white-space: nowrap;
+  font-size: 12px;
 }
 
 .checkbox__list {
@@ -3002,6 +3030,147 @@ body.locked {
   row-gap: 20px;
 }
 
+.terminal {
+  color: var(--text-1);
+}
+
+.terminal__blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  margin: 12px 0;
+}
+
+.terminal__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.terminal__block-text {
+  font-weight: 500;
+  font-size: 11px;
+  color: var(--text-1);
+}
+
+.terminal__block-sum {
+  font-weight: 500;
+  font-size: 11px;
+  color: var(--text2);
+}
+
+.terminal__graphik {
+  width: 100%;
+  height: 294px;
+  margin: 12px 0;
+}
+
+.terminal__graphik-img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.terminal__form {
+  margin: 12px 0;
+}
+
+.terminal__form .subtabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 12px;
+}
+
+.terminal__form-rows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 6px;
+}
+
+.terminal__form-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 12px;
+     -moz-column-gap: 12px;
+          column-gap: 12px;
+}
+
+.terminal__form-settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+}
+
+.terminal__form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  padding: 14px 20px;
+  border-radius: 8px;
+  background-color: #272728;
+}
+
+.terminal__form-row.disabled {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.terminal__form-text {
+  font-size: 14px;
+  color: var(--text2);
+}
+
 .tab__head {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3418,6 +3587,10 @@ body.locked {
 .subtabs__btn.active {
   background-color: var(--green-2);
   color: var(--text-1);
+}
+
+.subtabs__btn.active.subtabs__btn--red {
+  background-color: var(--red);
 }
 
 .subtabs__content {

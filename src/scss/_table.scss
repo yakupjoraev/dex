@@ -204,3 +204,26 @@
 .table-wrapper--not-padding {
   padding: 0;
 }
+
+.table__text--mini {
+  display: flex;
+  align-items: center;
+  column-gap: 2px;
+  font-size: 9px;
+  font-weight: 500;
+}
+
+.filters-head__row {
+
+  .table__info {
+    .table__bold-text {
+      white-space: nowrap;
+      font-size: 14px;
+    }
+
+    p {
+      white-space: nowrap;
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,2096 @@
+<div class="terminal portfolio-analyzer">
+  <div class="tab">
+    <div class="tab__head">
+      <div class="tab__btns">
+        <button type="button" class="tab__btn active" data-tab-btn="Main">Main</button>
+        <button type="button" class="tab__btn" data-tab-btn="Trades">Trades</button>
+        <button type="button" class="tab__btn" data-tab-btn="Orders">Orders</button>
+        <button type="button" class="tab__btn" data-tab-btn="Holders">Holders (23)</button>
+        <button type="button" class="tab__btn" data-tab-btn="Positions">Positions</button>
+        <button type="button" class="tab__btn" data-tab-btn="History">History</button>
+      </div>
+    </div>
+
+    <div class="tab__contents">
+      <div class="tab__content active" data-tab-content="Main">
+        <div class="terminal__blocks">
+          <div class="terminal__block">
+            <p class="terminal__block-text">Price</p>
+            <p class="terminal__block-sum">$0.0₉3363</p>
+          </div>
+
+          <div class="terminal__block">
+            <p class="terminal__block-text">Mkt Cap</p>
+            <p class="terminal__block-sum">$0.03363</p>
+          </div>
+
+          <div class="terminal__block">
+            <p class="terminal__block-text">Liquidity</p>
+            <p class="terminal__block-sum">$0.003904</p>
+          </div>
+
+          <div class="terminal__block">
+            <p class="terminal__block-text">FDV</p>
+            <p class="terminal__block-sum">$0.003904</p>
+          </div>
+
+          <div class="terminal__block">
+            <p class="terminal__block-text">B.Curve</p>
+            <p class="terminal__block-sum">$0.003904</p>
+          </div>
+        </div>
+
+        <div class="terminal__graphik">
+          <img class="terminal__graphik-img" src="./img/terminal-graphik.png" alt="terminal graphik">
+        </div>
+
+        <form class="terminal__form" action="#">
+          <div class="subtabs">
+            <div class="subtabs__head">
+              <button type="button" class="subtabs__btn active" data-subtabs-btn="Buy">Buy</button>
+              <button type="button" class="subtabs__btn subtabs__btn--red" data-subtabs-btn="Sell">Sell</button>
+            </div>
+
+            <div class="subtabs__contents">
+              <div class="subtabs__content active" data-subtabs-content="Buy">
+                <div class="terminal__form-rows">
+                  <div class="terminal__form-select">
+                    <div class="custom-dropdown">
+                      <div class="dropdown-relative">
+                        <div class="dropdown-toggle">Select an option</div>
+                        <input type="hidden" class="dropdown-value" value="">
+                        <img class="dropdown-toggle-icon" src="./img/icons/select-tringle.svg"
+                          alt="select-tringle icon">
+                      </div>
+                      <ul class="dropdown-menu">
+                        <li class="dropdown-selected" data-value="Market 1"> Market 1</li>
+                        <li data-value="Market 2">Market 2
+                        </li>
+                      </ul>
+                    </div>
+
+                    <button type="button" class="terminal__form-settings">
+                      <img width="24" height="24" src="./img/icons/settings.svg" alt="settings icon">
+                    </button>
+                  </div>
+
+                  <div class="terminal__form-row">
+                    <p class="terminal__form-text">AMOUNT</p>
+                    <p class="terminal__form-text terminal__form-text--white">100.00</p>
+                    <p class="terminal__form-text">USDT</p>
+                  </div>
+
+                  <div class="terminal__form-row disabled">
+                    <p class="terminal__form-text">PRICE</p>
+                    <p class="terminal__form-text terminal__form-text--white">102.50</p>
+                    <p class="terminal__form-text">USDT</p>
+                  </div>
+
+                  <button type="button" class="btn btn--large">Buy</button>
+                </div>
+
+              </div>
+
+              <div class="subtabs__content" data-subtabs-content="Sell">
+                <div class="terminal__form-rows">
+                  <div class="terminal__form-select">
+                    <div class="custom-dropdown">
+                      <div class="dropdown-relative">
+                        <div class="dropdown-toggle">Select an option</div>
+                        <input type="hidden" class="dropdown-value" value="">
+                        <img class="dropdown-toggle-icon" src="./img/icons/select-tringle.svg"
+                          alt="select-tringle icon">
+                      </div>
+                      <ul class="dropdown-menu">
+                        <li class="dropdown-selected" data-value="Market 1"> Market 1</li>
+                        <li data-value="Market 2">Market 2
+                        </li>
+                      </ul>
+                    </div>
+
+                    <button type="button" class="terminal__form-settings">
+                      <img width="24" height="24" src="./img/icons/settings.svg" alt="settings icon">
+                    </button>
+                  </div>
+
+                  <div class="terminal__form-row">
+                    <p class="terminal__form-text">AMOUNT</p>
+                    <p class="terminal__form-text terminal__form-text--white">100.00</p>
+                    <p class="terminal__form-text">USDT</p>
+                  </div>
+
+                  <div class="terminal__form-row">
+                    <p class="terminal__form-text">PRICE</p>
+                    <p class="terminal__form-text terminal__form-text--white">102.50</p>
+                    <p class="terminal__form-text">USDT</p>
+                  </div>
+                  <button type="button" class="btn btn--red btn--large">SELl</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="tab__content" data-tab-content="Trades">
+        <div class="table-wrapper table-wrapper--not-right-border ">
+          <table class="table">
+            <thead>
+              <tr>
+                <th colspan="2">
+                  <div class="table__head table__left-text">
+                    <p>Time ago</p>
+                  </div>
+                </th>
+                <th>
+                  <div class="table__relative">
+                    <div class="table__head">
+                      <p>Type</p>
+                    </div>
+                  </div>
+                </th>
+                <th>
+                  <div class="table__head">
+                    <p>Price</p>
+                  </div>
+                </th>
+                <th>
+                  <div class="table__head">
+                    <p>Amt</p>
+                  </div>
+                </th>
+
+                <th>
+                  <div class="table__head">
+                    <p>Total</p>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text green-text">Buy</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text red-text">Sell</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text green-text">Buy</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text red-text">Sell</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text green-text">Buy</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text red-text">Sell</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text green-text">Buy</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text red-text">Sell</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text green-text">Buy</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text red-text">Sell</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text green-text">Buy</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text red-text">Sell</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text green-text">Buy</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text red-text">Sell</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text green-text">Buy</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text red-text">Sell</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text green-text">Buy</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text red-text">Sell</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text green-text">Buy</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text red-text">Sell</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="tab__content" data-tab-content="Orders">
+        <div class="table-wrapper table-wrapper--not-right-border ">
+          <table class="table">
+            <thead>
+              <tr>
+                <th colspan="2">
+                  <div class="table__head table__left-text">
+                    <p>Time ago</p>
+                  </div>
+                </th>
+                <th>
+                  <div class="table__relative">
+                    <div class="table__head">
+                      <p>Type</p>
+                    </div>
+                  </div>
+                </th>
+                <th>
+                  <div class="table__head">
+                    <p>Price</p>
+                  </div>
+                </th>
+                <th>
+                  <div class="table__head">
+                    <p>Amt</p>
+                  </div>
+                </th>
+
+                <th>
+                  <div class="table__head">
+                    <p>Total</p>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text green-text">Buy</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text red-text">Sell</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text green-text">Buy</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text red-text">Sell</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text green-text">Buy</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text red-text">Sell</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text green-text">Buy</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text red-text">Sell</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text green-text">Buy</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text red-text">Sell</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text green-text">Buy</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text red-text">Sell</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text green-text">Buy</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text red-text">Sell</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text green-text">Buy</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text red-text">Sell</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text green-text">Buy</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text red-text">Sell</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text green-text">Buy</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text red-text">Sell</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">2.5K</p>
+                  </div>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="tab__content" data-tab-content="Holders">
+        <div class="table-wrapper table-wrapper--not-right-border ">
+          <table class="table">
+            <thead>
+              <tr>
+                <th colspan="2">
+                  <div class="table__head table__left-text">
+                    <p>Address</p>
+                  </div>
+                </th>
+                <th>
+                  <div class="table__head">
+                    <p>AmtVNLINK</p>
+                  </div>
+                </th>
+                <th>
+                  <div class="table__head">
+                    <p>Balance, USDT</p>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">0x57zT...5487</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">1000T</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$0.0₄5919</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">0x57zT...5487</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">1000T</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$0.0₄5919</p>
+                  </div>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="tab__content" data-tab-content="Positions">
+        <div class="table-wrapper">
+          <table class="table">
+            <thead>
+              <tr>
+                <th colspan="2">
+                  <div class="table__head table__left-text">
+                    <p>Token</p>
+                  </div>
+                </th>
+                <th>
+                  <div class="table__relative">
+                    <button type="button" class="table__left-btn">
+                      <img width="6" src="./img/icons/left-tringle.svg" alt="left-tringle icon">
+                    </button>
+                    <div class="table__head">
+                      <p>Invested</p>
+                    </div>
+                  </div>
+                </th>
+                <th>
+                  <div class="table__head">
+                    <p>Sold</p>
+                  </div>
+                </th>
+                <th>
+                  <div class="table__head">
+                    <p>Remaining</p>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__info-token">
+                      <img width="36" height="36" src="./img/tokens/Cryptocurrency.svg" alt="Cryptocurrency icon">
+                    </div>
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">BTC</p>
+                      <p>Bitcoin</p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$0.0₄5919</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$0.0₄5919</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$0.0₄5919</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__info-token">
+                      <img width="36" height="36" src="./img/tokens/Cryptocurrency.svg" alt="Cryptocurrency icon">
+                    </div>
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">BTC</p>
+                      <p>Bitcoin</p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$0.0₄5919</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$0.0₄5919</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$0.0₄5919</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__info-token">
+                      <img width="36" height="36" src="./img/tokens/Cryptocurrency.svg" alt="Cryptocurrency icon">
+                    </div>
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">BTC</p>
+                      <p>Bitcoin</p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$0.0₄5919</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$0.0₄5919</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$0.0₄5919</p>
+                  </div>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__info-token">
+                      <img width="36" height="36" src="./img/tokens/Cryptocurrency.svg" alt="Cryptocurrency icon">
+                    </div>
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">BTC</p>
+                      <p>Bitcoin</p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$0.0₄5919</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$0.0₄5919</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$0.0₄5919</p>
+                  </div>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__info-token">
+                      <img width="36" height="36" src="./img/tokens/Cryptocurrency.svg" alt="Cryptocurrency icon">
+                    </div>
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">BTC</p>
+                      <p>Bitcoin</p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$0.0₄5919</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$0.0₄5919</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$0.0₄5919</p>
+                  </div>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__info-token">
+                      <img width="36" height="36" src="./img/tokens/Cryptocurrency.svg" alt="Cryptocurrency icon">
+                    </div>
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">BTC</p>
+                      <p>Bitcoin</p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$0.0₄5919</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$0.0₄5919</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$0.0₄5919</p>
+                  </div>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__info-token">
+                      <img width="36" height="36" src="./img/tokens/Cryptocurrency.svg" alt="Cryptocurrency icon">
+                    </div>
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">BTC</p>
+                      <p>Bitcoin</p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$0.0₄5919</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$0.0₄5919</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$0.0₄5919</p>
+                  </div>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__info-token">
+                      <img width="36" height="36" src="./img/tokens/Cryptocurrency.svg" alt="Cryptocurrency icon">
+                    </div>
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">BTC</p>
+                      <p>Bitcoin</p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$0.0₄5919</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$0.0₄5919</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$0.0₄5919</p>
+                  </div>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__info-token">
+                      <img width="36" height="36" src="./img/tokens/Cryptocurrency.svg" alt="Cryptocurrency icon">
+                    </div>
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">BTC</p>
+                      <p>Bitcoin</p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$0.0₄5919</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$0.0₄5919</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$0.0₄5919</p>
+                  </div>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__info-token">
+                      <img width="36" height="36" src="./img/tokens/Cryptocurrency.svg" alt="Cryptocurrency icon">
+                    </div>
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">BTC</p>
+                      <p>Bitcoin</p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$0.0₄5919</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$0.0₄5919</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$0.0₄5919</p>
+                  </div>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__info-token">
+                      <img width="36" height="36" src="./img/tokens/Cryptocurrency.svg" alt="Cryptocurrency icon">
+                    </div>
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">BTC</p>
+                      <p>Bitcoin</p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$0.0₄5919</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$0.0₄5919</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$0.0₄5919</p>
+                  </div>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="tab__content" data-tab-content="History">
+        <div class="table-wrapper">
+          <table class="table">
+            <thead>
+              <tr>
+                <th colspan="2">
+                  <div class="table__head table__left-text">
+                    <p>Time ago</p>
+                  </div>
+                </th>
+                <th>
+                  <div class="table__relative">
+                    <button type="button" class="table__left-btn">
+                      <img width="6" src="./img/icons/left-tringle.svg" alt="left-tringle icon">
+                    </button>
+                    <div class="table__head">
+                      <p>Type</p>
+                    </div>
+                  </div>
+                </th>
+                <th>
+                  <div class="table__head">
+                    <p>Price</p>
+                  </div>
+                </th>
+                <th>
+                  <div class="table__head">
+                    <p>Amt</p>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text green-text">Buy</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text red-text">Sell</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text green-text">Buy</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text red-text">Sell</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text green-text">Buy</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text red-text">Sell</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
