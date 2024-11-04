@@ -6,7 +6,7 @@
         <img width="20" height="20" src="./img/icons/filter-icon.svg" alt="icon">
       </div>
 
-      <div class="selects">
+      <!-- <div class="selects">
         <div class="select">
           <label class="select__label" for="">Chains</label>
           <select name="chains">
@@ -23,6 +23,42 @@
             <option value="Choose Chain 2">Choose Chain 2</option>
             <option value="Choose Chain 3">Choose Chain 3</option>
           </select>
+        </div>
+      </div> -->
+
+      <div class="input-rows">
+        <div class="input-row">
+          <label class="input-row__label" for="">Chains</label>
+
+          <div class="custom-dropdown">
+            <div class="dropdown-relative">
+              <div class="dropdown-toggle">Select an option</div>
+              <input type="hidden" class="dropdown-value" value="">
+              <img class="dropdown-toggle-icon" src="./img/icons/select-tringle.svg" alt="select-tringle icon">
+            </div>
+            <ul class="dropdown-menu">
+              <li class="dropdown-selected" data-value="Choose Chain 1"> Choose Chain 1</li>
+              <li data-value="Choose Chain 2">Choose Chain 2
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="input-row">
+          <label class="input-row__label" for="">Wallets</label>
+
+          <div class="custom-dropdown">
+            <div class="dropdown-relative">
+              <div class="dropdown-toggle">Select an option</div>
+              <input type="hidden" class="dropdown-value" value="">
+              <img class="dropdown-toggle-icon" src="./img/icons/select-tringle.svg" alt="select-tringle icon">
+            </div>
+            <ul class="dropdown-menu">
+              <li class="dropdown-selected" data-value="Choose Chain 1"> Choose Chain 1</li>
+              <li data-value="Choose Chain 2">Choose Chain 2
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

@@ -70,6 +70,10 @@
   &__btn {
     min-width: 186px;
     width: fit-content;
+
+    &--full {
+      width: 100%;
+    }
   }
 
 }

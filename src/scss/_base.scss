@@ -114,6 +114,17 @@
     font-size: 14px;
     min-height: 48px;
   }
+
+  &--red {
+    font-weight: 600;
+    font-size: 11px;
+    border-color: var(--red);
+    min-height: 48px;
+  }
+
+  &--fit-width {
+    width: fit-content;
+  }
 }
 
 .green-text {

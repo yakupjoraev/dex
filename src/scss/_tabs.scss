@@ -363,3 +363,135 @@
     color: var(--text-1);
   }
 }
+
+
+.subtabs {
+
+  // .subtabs__head
+
+  &__head {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 10px;
+    padding: 6px;
+    border-radius: 8px;
+    background-color: #2f2f30;
+  }
+
+  // .subtabs__btn
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    padding: 10px;
+
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    color: var(--text2);
+
+    &.active {
+      background-color: var(--green-2);
+      color: var(--text-1);
+    }
+  }
+
+  // .subtabs__contents
+
+  &__contents {}
+
+  // .subtabs__content
+
+  &__content {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+}
+
+.sessions {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  margin: 20px 0;
+
+  // .sessions__row
+
+  &__row {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+  }
+
+  // .sessions__row-label
+
+  &__row-label {
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--green-2);
+  }
+
+  // .sessions__item
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  // .sessions__item-info
+
+  &__item-info {}
+
+  // .sessions__item-text
+
+  &__item-text {
+    font-family: var(--font-family);
+    color: var(--text-1);
+  }
+
+  // .sessions__item-text--bold
+
+  &__item-text--bold {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  // .sessions__item-text--reg
+
+  &__item-text--reg {
+    font-size: 14px;
+  }
+
+  // .sessions__item-text--light
+
+  &__item-text--light {
+    font-size: 14px;
+    color: var(--text2);
+  }
+
+  // .sessions__item-status
+
+  &__item-status {
+    font-size: 14px;
+    line-height: 140%;
+    text-align: right;
+    color: var(--text2);
+
+    p.green-color {
+      font-weight: 600;
+      font-size: 16px;
+      color: var(--green-2);
+    }
+  }
+}

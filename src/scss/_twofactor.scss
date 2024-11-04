@@ -1,0 +1,127 @@
+.twofactor {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  padding: 24px 0;
+
+  .btn {
+    margin-top: 24px;
+  }
+
+  // .twofactor__steps
+
+  &__steps {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    margin-bottom: 24px;
+  }
+
+  // .twofactor__step
+
+  &__step {
+    width: 100%;
+    background-color: #d9d9d9;
+    border-radius: 20px;
+    height: 5px;
+
+    &.active {
+      background-color: var(--green-2);
+    }
+  }
+
+  // .twofactor__content
+
+  &__content {}
+
+  // .twofactor__start
+
+  &__start {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  // .twofactor__texts
+
+  &__texts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+  }
+
+  // .twofactor__label
+
+  &__label {
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    color: var(--text-1);
+  }
+
+  // .twofactor__text
+
+  &__text {
+    font-size: 12px;
+    line-height: 140%;
+    text-align: center;
+    color: var(--text2);
+  }
+
+  // .twofactor__qr
+
+  &__qr {
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+    align-items: center;
+  }
+
+  // .twofactor__qr-pic
+
+  &__qr-pic {
+    margin: 0 auto;
+    object-fit: cover;
+  }
+
+  // .twofactor__qr-text
+
+  &__qr-text {
+    font-size: 12px;
+    text-align: center;
+    color: var(--text-1);
+  }
+
+  // .twofactor__address
+
+  &__address {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    text-align: center;
+    color: var(--green-2);
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  // .twofactor__authentication
+
+  &__authentication {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+
+  // .twofactor__finish
+
+  &__finish {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+
+  // .twofactor__finish-pic
+
+  &__finish-pic {}
+}

@@ -76,7 +76,7 @@ function toggleAccordion() {
 
 accordionItems.forEach(item => item.addEventListener('click', toggleAccordion));
 
-function specialTabs() {
+function tabs() {
   const container = document.querySelector('.tab');
 
   if (!container) {
@@ -101,7 +101,34 @@ function specialTabs() {
   });
 }
 
-specialTabs();
+tabs();
+
+function subTabs() {
+  const container = document.querySelector('.subtabs');
+
+  if (!container) {
+    return null
+  }
+
+  const tabButtons = document.querySelectorAll('.subtabs__btn');
+  const tabContents = document.querySelectorAll('.subtabs__content');
+
+  tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const target = button.getAttribute('data-subtabs-btn');
+
+      // Удаляем класс active у всех кнопок и контента
+      tabButtons.forEach(btn => btn.classList.remove('active'));
+      tabContents.forEach(content => content.classList.remove('active'));
+
+      // Добавляем класс active к выбранной кнопке и соответствующему контенту
+      button.classList.add('active');
+      document.querySelector(`.subtabs__content[data-subtabs-content="${target}"]`).classList.add('active');
+    });
+  });
+}
+
+subTabs();
 
 function customDropdown(dropdown) {
   const toggleDiv = dropdown.querySelector('.dropdown-toggle');
@@ -117,9 +144,9 @@ function customDropdown(dropdown) {
   function setSelectedItem() {
     const selectedItem = dropdown.querySelector('.dropdown-menu li.dropdown-selected');
     if (selectedItem) {
-      const imgSrc = selectedItem.querySelector('img').src;
+      const imgSrc = selectedItem.querySelector('img')?.src || '';
       const text = selectedItem.textContent.trim();
-      toggleDiv.innerHTML = `<img src="${imgSrc}" width="20" height="20" alt="icon"> ${text}`;
+      toggleDiv.innerHTML = imgSrc ? `<img src="${imgSrc}" width="20" height="20" alt="icon"> ${text}` : text;
       hiddenInput.value = selectedItem.getAttribute('data-value');
     }
   }
@@ -147,9 +174,9 @@ function customDropdown(dropdown) {
       // Добавляем класс dropdown-selected выбранному элементу
       this.classList.add('dropdown-selected');
       // Обновляем значение toggleDiv и hiddenInput
-      const imgSrc = this.querySelector('img').src;
+      const imgSrc = this.querySelector('img')?.src || '';
       const text = this.textContent.trim();
-      toggleDiv.innerHTML = `<img src="${imgSrc}" width="20" height="20" alt="icon"> ${text}`;
+      toggleDiv.innerHTML = imgSrc ? `<img src="${imgSrc}" width="20" height="20" alt="icon"> ${text}` : text;
       hiddenInput.value = this.getAttribute('data-value');
       // Скрываем выпадающий список
       dropdownMenu.style.display = 'none';
