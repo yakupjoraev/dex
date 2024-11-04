@@ -102,6 +102,81 @@ function specialTabs() {
 
 specialTabs();
 
+function customDropdown(dropdown) {
+  const toggleDiv = dropdown.querySelector('.dropdown-toggle');
+  const hiddenInput = dropdown.querySelector('.dropdown-value');
+  const dropdownMenu = dropdown.querySelector('.dropdown-menu');
+  const dropdownItems = dropdown.querySelectorAll('.dropdown-menu li');
+
+  if (!toggleDiv || !hiddenInput || !dropdownMenu || dropdownItems.length === 0) {
+    return null;
+  }
+
+  // Установка выбранного элемента при загрузке страницы
+  function setSelectedItem() {
+    const selectedItem = dropdown.querySelector('.dropdown-menu li.dropdown-selected');
+    if (selectedItem) {
+      const imgSrc = selectedItem.querySelector('img').src;
+      const text = selectedItem.textContent.trim();
+      toggleDiv.innerHTML = `<img src="${imgSrc}" width="20" height="20" alt="icon"> ${text}`;
+      hiddenInput.value = selectedItem.getAttribute('data-value');
+    }
+  }
+
+  // Обработчик клика на toggleDiv
+  toggleDiv.addEventListener('click', function () {
+    if (dropdownMenu.style.display === 'block') {
+      dropdownMenu.style.display = 'none';
+      dropdown.classList.remove('open');
+      toggleDiv.style.borderColor = 'transparent';
+    } else {
+      dropdownMenu.style.display = 'block';
+      dropdown.classList.add('open');
+      toggleDiv.style.borderColor = 'var(--green-2)';
+    }
+  });
+
+  // Обработчик клика на элементы списка
+  dropdownItems.forEach(function (item) {
+    item.addEventListener('click', function () {
+      // Удаляем класс dropdown-selected у всех элементов
+      dropdownItems.forEach(function (el) {
+        el.classList.remove('dropdown-selected');
+      });
+      // Добавляем класс dropdown-selected выбранному элементу
+      this.classList.add('dropdown-selected');
+      // Обновляем значение toggleDiv и hiddenInput
+      const imgSrc = this.querySelector('img').src;
+      const text = this.textContent.trim();
+      toggleDiv.innerHTML = `<img src="${imgSrc}" width="20" height="20" alt="icon"> ${text}`;
+      hiddenInput.value = this.getAttribute('data-value');
+      // Скрываем выпадающий список
+      dropdownMenu.style.display = 'none';
+      dropdown.classList.remove('open');
+      toggleDiv.style.borderColor = 'transparent';
+    });
+  });
+
+  // Закрываем выпадающий список при клике вне его
+  document.addEventListener('click', function (event) {
+    if (!dropdown.contains(event.target)) {
+      dropdownMenu.style.display = 'none';
+      dropdown.classList.remove('open');
+      toggleDiv.style.borderColor = 'transparent';
+    }
+  });
+
+  // Вызываем функцию при загрузке страницы
+  setSelectedItem();
+}
+
+// Инициализация кастомных выпадающих списков
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.custom-dropdown').forEach(function (dropdown) {
+    customDropdown(dropdown);
+  });
+});
+
 
 const openModalBtns = document.querySelectorAll('.open-modal-btn');
 const closeModalBtns = document.querySelectorAll('.close-modal-btn');

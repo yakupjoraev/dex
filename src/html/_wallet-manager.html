@@ -1,0 +1,217 @@
+<div class="wallet-manager">
+  <div class="tab">
+    <div class="tab__head">
+      <div class="custom-dropdown">
+        <div class="dropdown-relative">
+          <div class="dropdown-toggle">Select an option</div>
+          <input type="hidden" class="dropdown-value" value="">
+          <img class="dropdown-toggle-icon" src="./img/icons/select-tringle.svg" alt="select-tringle icon">
+        </div>
+        <ul class="dropdown-menu">
+          <li class="dropdown-selected" data-value="eth 1"><img width="20" height="20" src="./img/tokens/eth.svg"
+              alt="eth"> ETH</li>
+          <li data-value="eth 2"><img width="20" height="20" src="./img/tokens/eth.svg" alt="eth"> ETH 2</li>
+        </ul>
+      </div>
+
+      <div class="tab__btns">
+        <button type="button" class="tab__btn active" data-tab-btn="Wallets">Wallets</button>
+        <button type="button" class="tab__btn" data-tab-btn="Withdraw">Withdraw</button>
+      </div>
+    </div>
+
+    <div class="tab__contents">
+      <div class="tab__content active" data-tab-content="Wallets">
+        <div class="wallet-manager__head">
+          <div class="wallet-manager__checking">
+            <div class="wallet-manager__checking-text active">Wallets</div>
+
+            <input class="switch-only-active " type="checkbox" checked="true">
+
+            <div class="wallet-manager__checking-text">Tokens</div>
+          </div>
+          <button type="button" class="wallet-manager__new-wallet open-modal-btn" data-modal-id="withdraw-wallet">
+            <span>new Wallet</span>
+            <img width="16" height="16" src="./img/icons/green-plus.svg" alt="plus icon">
+          </button>
+        </div>
+        <div class="wallet-manager__content">
+          <ul class="wallet-manager__list">
+            <li class="wallet-manager__item">
+              <div class="wallet-manager__item-info">
+                <div class="wallet-manager__item-wallet"><span>Wallet #1</span></div>
+                <div class="wallet-manager__item-key"><img width="16" height="16" src="./img/icons/yellow-key.svg"
+                    alt="key icon"></div>
+              </div>
+              <div class="wallet-manager__item-sum">$0</div>
+              <div class="wallet-manager__item-dotted"><img width="16" height="16" src="./img/icons/grey-dotted.svg"
+                  alt="dotted icon"></div>
+            </li>
+
+            <li class="wallet-manager__item">
+              <div class="wallet-manager__item-info">
+                <div class="wallet-manager__item-wallet"><span>Wallet #1</span></div>
+                <div class="wallet-manager__item-key"><img width="16" height="16" src="./img/icons/yellow-key.svg"
+                    alt="key icon"></div>
+              </div>
+              <div class="wallet-manager__item-sum">$0</div>
+              <div class="wallet-manager__item-dotted"><img width="16" height="16" src="./img/icons/grey-dotted.svg"
+                  alt="dotted icon"></div>
+            </li>
+
+            <li class="wallet-manager__item">
+              <div class="wallet-manager__item-info">
+                <div class="wallet-manager__item-wallet"><span>Wallet #1</span></div>
+                <div class="wallet-manager__item-key"><img width="16" height="16" src="./img/icons/yellow-key.svg"
+                    alt="key icon"></div>
+              </div>
+              <div class="wallet-manager__item-sum">$0</div>
+              <div class="wallet-manager__item-dotted"><img width="16" height="16" src="./img/icons/grey-dotted.svg"
+                  alt="dotted icon"></div>
+            </li>
+          </ul>
+
+          <a class="wallet-manager__download" href="#">
+            <span>2 private keys</span>
+
+            <img src="./img/icons/yellow-download.svg" alt="">
+          </a>
+        </div>
+      </div>
+
+      <div class="tab__content" data-tab-content="Withdraw">
+        <div class="wallet-manager__head">
+          <div class="wallet-manager__checking">
+            <div class="wallet-manager__checking-text active">
+              2 Verified Wallets
+
+              <img width="16" height="16" src="./img/icons/shield.svg" alt="shield icon">
+            </div>
+          </div>
+          <button type="button" class="wallet-manager__new-wallet open-modal-btn" data-modal-id="withdraw-wallet">
+            <span>new Wallet</span>
+            <img width="16" height="16" src="./img/icons/green-plus.svg" alt="plus icon">
+          </button>
+        </div>
+        <div class="wallet-manager__content">
+          <ul class="wallet-manager__list">
+            <li class="wallet-manager__item">
+              <div class="wallet-manager__item-info">
+                <div class="wallet-manager__item-wallet"><span>U1</span></div>
+                <div class="wallet-manager__item-name">Name</div>
+                <div class="wallet-manager__item-address">
+                  <span>0x123vx...124</span>
+                  <img width="16" height="16" src="./img/icons/copy.svg" alt="copy icon">
+                </div>
+              </div>
+              <div class="wallet-manager__item-dotted"><img width="16" height="16" src="./img/icons/grey-dotted.svg"
+                  alt="dotted icon"></div>
+            </li>
+
+            <li class="wallet-manager__item">
+              <div class="wallet-manager__item-info">
+                <div class="wallet-manager__item-wallet"><span>U1</span></div>
+                <div class="wallet-manager__item-name">Name</div>
+                <div class="wallet-manager__item-address">
+                  <span>0x123vx...124</span>
+                  <img width="16" height="16" src="./img/icons/copy.svg" alt="copy icon">
+                </div>
+              </div>
+              <div class="wallet-manager__item-dotted"><img width="16" height="16" src="./img/icons/grey-dotted.svg"
+                  alt="dotted icon"></div>
+            </li>
+
+            <li class="wallet-manager__item">
+              <div class="wallet-manager__item-info">
+                <div class="wallet-manager__item-wallet"><span>U1</span></div>
+                <div class="wallet-manager__item-name">Name</div>
+                <div class="wallet-manager__item-address">
+                  <span>0x123vx...124</span>
+                  <img width="16" height="16" src="./img/icons/copy.svg" alt="copy icon">
+                </div>
+              </div>
+              <div class="wallet-manager__item-dotted"><img width="16" height="16" src="./img/icons/grey-dotted.svg"
+                  alt="dotted icon"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal" id="withdraw-wallet">
+  <div class="modal-content">
+    <button class="close-modal-btn">&times;</button>
+
+    <div class="modal__inner">
+      <div class="modal__head">
+        <h3 class="modal__title modal__title--center">
+          <span>New Withdraw Wallet</span>
+        </h3>
+      </div>
+
+      <div class="modal__content">
+        <div class="input-rows">
+
+          <div class="input-row">
+            <label class="input-row__label" for="">Wallet Type</label>
+
+            <div class="input-row__types">
+              <div class="input-row__type">
+                <input class="input-row__type-input" type="radio" name="wallet-type" id="types-1" checked>
+
+                <label class="input-row__type-label" for="types-1">
+                  <div class="input-row__type-tokens">
+                    <img width="20" height="20" src="./img/tokens/binance.svg" alt="icon">
+                    <img width="20" height="20" src="./img/tokens/eth.svg" alt="icon">
+                    <img width="20" height="20" src="./img/tokens/binance.svg" alt="icon">
+                  </div>
+
+                  <p class="input-row__type-text">EVM</p>
+                </label>
+              </div>
+
+              <div class="input-row__type">
+                <input class="input-row__type-input" type="radio" name="wallet-type" id="types-2">
+
+                <label class="input-row__type-label" for="types-2">
+                  <div class="input-row__type-tokens">
+                    <img width="20" height="20" src="./img/tokens/solana.svg" alt="icon">
+                  </div>
+
+                  <p class="input-row__type-text">Solana</p>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="input-row">
+            <label class="input-row__label" for="">Wallet Name</label>
+            <div class="input-row__wrapper">
+              <input class="input-row__input" type="text" placeholder="Name">
+            </div>
+          </div>
+
+          <div class="input-row">
+            <label class="input-row__label" for="">Wallet Address</label>
+            <div class="input-row__wrapper">
+              <input class="input-row__input" type="text" placeholder="0x1234569a7sda897da897sd89as7d879d">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal__footer">
+        <div class="modal__footer-btns">
+          <button type="button" class="modal__btn modal__btn--cancel">Cancel</button>
+          <button type="button" class="modal__btn btn">Apply</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

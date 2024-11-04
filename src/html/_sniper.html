@@ -1,0 +1,506 @@
+<div class="sniper portfolio-analyzer">
+  <div class="tab">
+    <div class="tab__head">
+      <div class="tab__btns">
+        <button type="button" class="tab__btn active" data-tab-btn="Settings">Settings</button>
+        <button type="button" class="tab__btn" data-tab-btn="Tokens">Tokens</button>
+        <button type="button" class="tab__btn" data-tab-btn="History">History</button>
+      </div>
+    </div>
+
+    <div class="tab__contents">
+      <div class="tab__content active" data-tab-content="Settings">
+        <form action="#" class="filters-page__form">
+          <div class="filters-page__content">
+            <div class="input-rows">
+              <div class="input-row">
+                <label class="input-row__label" for="">Token Name</label>
+
+                <div class="custom-dropdown">
+                  <div class="dropdown-relative">
+                    <div class="dropdown-toggle">Select an option</div>
+                    <input type="hidden" class="dropdown-value" value="">
+                    <img class="dropdown-toggle-icon" src="./img/icons/select-tringle.svg" alt="select-tringle icon">
+                  </div>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-selected" data-value="Bitcoin 1"><img width="20" height="20"
+                        src="./img/tokens/eth.svg" alt="eth"> Bitcoin <span>BTC</span></li>
+                    <li data-value="Bitcoin 2"><img width="20" height="20" src="./img/tokens/eth.svg" alt="eth"> Bitcoin
+                      <span>BTC</span> 2
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="input-row">
+                <label class="input-row__label" for="">Network</label>
+
+                <div class="custom-dropdown">
+                  <div class="dropdown-relative">
+                    <div class="dropdown-toggle">Select an option</div>
+                    <input type="hidden" class="dropdown-value" value="">
+                    <img class="dropdown-toggle-icon" src="./img/icons/select-tringle.svg" alt="select-tringle icon">
+                  </div>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-selected" data-value="Binance Smart Chain 1"><img width="20" height="20"
+                        src="./img/tokens/eth.svg" alt="eth"> Binance Smart Chain</li>
+                    <li data-value="Binance Smart Chain 2"><img width="20" height="20" src="./img/tokens/eth.svg"
+                        alt="eth"> Binance Smart Chain 2</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="input-row">
+                <label class="input-row__label" for="">Gas Price</label>
+                <div class="input-row__wrapper">
+                  <input class="input-row__input" type="text" placeholder="0">
+                  <img width="16" height="16" src="./img/icons/gas-pump-green.svg" alt="gas-pump-green icon">
+                  <div class="input__item-decor">$</div>
+                </div>
+              </div>
+
+              <div class="input-row">
+                <label class="input-row__label" for="">Max Slippage</label>
+                <div class="input-row__wrapper">
+                  <input class="input-row__input" type="text" placeholder="20%">
+                  <img width="16" height="16" src="./img/icons/falling-green.svg" alt="falling-green icon">
+                  <div class="input__item-decor">%</div>
+                </div>
+              </div>
+
+              <div class="input-row">
+                <label class="input-row__label" for="">Sell MEV Protection</label>
+
+                <div class="input-row__types input-row__types--thin">
+                  <div class="input-row__type">
+                    <input class="input-row__type-input" type="radio" name="wallet-type" id="types-1" checked>
+
+                    <label class="input-row__type-label" for="types-1">
+                      <p class="input-row__type-text">Disabled</p>
+                    </label>
+                  </div>
+
+                  <div class="input-row__type">
+                    <input class="input-row__type-input" type="radio" name="wallet-type" id="types-2">
+
+                    <label class="input-row__type-label" for="types-2">
+                      <p class="input-row__type-text">Enabled</p>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-row">
+                <label class="input-row__label" for="">Amount to Buy</label>
+                <div class="input-row__wrapper">
+                  <input class="input-row__input" type="text" placeholder="3">
+                  <div class="input__item-decor">BTC</div>
+                </div>
+              </div>
+
+              <div class="input-row">
+                <label class="input-row__label" for="">Peak Price</label>
+                <div class="input-row__wrapper">
+                  <input class="input-row__input" type="text" placeholder="0">
+                  <div class="input__item-decor">$</div>
+                </div>
+              </div>
+
+              <div class="input-row">
+                <label class="input-row__label" for="">Sell Percentage</label>
+                <div class="input-row__wrapper">
+                  <input class="input-row__input" type="text" placeholder="2">
+                  <div class="input__item-decor">%</div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="checkbox__list">
+              <div class="checkbox__item">
+                <input class="checkbox__item-input" type="checkbox" name="Auto-Approve" id="checkbox-1">
+                <label class="checkbox__item-label" for="checkbox-1">
+                  <p class="checkbox__item-text">Auto-Approve</p>
+                  <div class="checkbox__item-square"></div>
+                </label>
+              </div>
+
+              <div class="checkbox__item">
+                <input class="checkbox__item-input" type="checkbox" name="Sell at Peak" id="checkbox-2" checked>
+                <label class="checkbox__item-label" for="checkbox-2">
+                  <p class="checkbox__item-text">Sell at Peak</p>
+                  <div class="checkbox__item-square"></div>
+                </label>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="filters-page__footer">
+            <button type="reset" class="filters-page__btn-reset">
+              <img src="./img/icons/btn-reset.svg" alt="reset icon">
+              <span>Reset</span>
+            </button>
+
+            <button type="button" class="filters-page__btn btn"><span>Apply</span></button>
+          </div>
+        </form>
+      </div>
+
+      <div class="tab__content" data-tab-content="Tokens">
+        <div class="tab__items">
+          <div class="tab__item tab__item--column tab__item--border">
+            <div class="tab__info">
+              <div class="tab__token">
+                <div class="tab__token-picture">
+                  <img class="tab__token-pic" width="46" height="46" src="./img/tokens/Cryptocurrency.svg"
+                    alt="token icon">
+                  <img class="tab__token-subpic" width="20" height="20" src="./img/tokens/binance.svg"
+                    alt="Cryptocurrency icon">
+                </div>
+
+                <div class="tab__token-rows">
+                  <div class="tab__token-row">
+                    <p class="tab__token-name">BTC</p>
+                    <p class="tab__token-subname">Bitcoin</p>
+                  </div>
+
+                  <div class="tab__token-row">
+                    <div class="tab__token-socials">
+                      <a href="#" class="tab__token-social">
+                        <img width="12" height="12" src="./img/icons/x.svg" alt="x icon">
+                      </a>
+
+                      <a href="#" class="tab__token-social">
+                        <img width="12" height="12" src="./img/icons/instagram.svg" alt="instagram icon">
+                      </a>
+
+                      <a href="#" class="tab__token-social">
+                        <img width="12" height="12" src="./img/icons/bxl_telegram.svg" alt="bxl_telegram icon">
+                      </a>
+
+                      <a href="#" class="tab__token-social">
+                        <img width="12" height="12" src="./img/icons/tabler_brand-coinbase.svg"
+                          alt="tabler_brand-coinbase icon">
+                      </a>
+
+                      <a href="#" class="tab__token-social">
+                        <img width="12" height="12" src="./img/icons/mdi_web.svg" alt="mdi_web icon">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab__graphik">
+                  <div class="tab__graphik-num green-text">
+                    <img src="./img/icons/percent-top.svg" alt="percent">
+                    <span>0.05336%</span>
+                  </div>
+
+                  <div class="tab__graphik-picture">
+                    <img width="74" src="./img/green-graphik.svg" alt="graphik">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab__blocks">
+              <div class="tab__block">
+                <span>Vol</span>
+                <p>7K</p>
+              </div>
+
+              <div class="tab__block">
+                <span>Liq</span>
+                <p>$633</p>
+              </div>
+
+              <div class="tab__block">
+                <img width="12" height="12" src="./img/icons/peoples.svg" alt="icon">
+                <p>3</p>
+              </div>
+
+              <div class="tab__block">
+                <span>MC</span>
+                <p>$4K</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab__item tab__item--column tab__item--border">
+            <div class="tab__info">
+              <div class="tab__token">
+                <div class="tab__token-picture">
+                  <img class="tab__token-pic" width="46" height="46" src="./img/tokens/Cryptocurrency.svg"
+                    alt="token icon">
+                  <img class="tab__token-subpic" width="20" height="20" src="./img/tokens/binance.svg"
+                    alt="Cryptocurrency icon">
+                </div>
+
+                <div class="tab__token-rows">
+                  <div class="tab__token-row">
+                    <p class="tab__token-name">BTC</p>
+                    <p class="tab__token-subname">Bitcoin</p>
+                  </div>
+
+                  <div class="tab__token-row">
+                    <div class="tab__token-socials">
+                      <a href="#" class="tab__token-social">
+                        <img width="12" height="12" src="./img/icons/x.svg" alt="x icon">
+                      </a>
+
+                      <a href="#" class="tab__token-social">
+                        <img width="12" height="12" src="./img/icons/instagram.svg" alt="instagram icon">
+                      </a>
+
+                      <a href="#" class="tab__token-social">
+                        <img width="12" height="12" src="./img/icons/bxl_telegram.svg" alt="bxl_telegram icon">
+                      </a>
+
+                      <a href="#" class="tab__token-social">
+                        <img width="12" height="12" src="./img/icons/tabler_brand-coinbase.svg"
+                          alt="tabler_brand-coinbase icon">
+                      </a>
+
+                      <a href="#" class="tab__token-social">
+                        <img width="12" height="12" src="./img/icons/mdi_web.svg" alt="mdi_web icon">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab__graphik">
+                  <div class="tab__graphik-num red-text">
+                    <img src="./img/icons/percent-bottom.svg" alt="percent">
+                    <span>6%</span>
+                  </div>
+
+                  <div class="tab__graphik-picture">
+                    <img width="74" src="./img/red-graphik.svg" alt="graphik">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab__blocks">
+              <div class="tab__block">
+                <span>Vol</span>
+                <p>7K</p>
+              </div>
+
+              <div class="tab__block">
+                <span>Liq</span>
+                <p>$633</p>
+              </div>
+
+              <div class="tab__block">
+                <img width="12" height="12" src="./img/icons/peoples.svg" alt="icon">
+                <p>3</p>
+              </div>
+
+              <div class="tab__block">
+                <span>MC</span>
+                <p>$4K</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab__content" data-tab-content="History">
+        <div class="table-wrapper">
+          <table class="table">
+            <thead>
+              <tr>
+                <th colspan="2">
+                  <div class="table__head table__left-text">
+                    <p>Time ago</p>
+                  </div>
+                </th>
+                <th>
+                  <div class="table__relative">
+                    <button type="button" class="table__left-btn">
+                      <img width="6" src="./img/icons/left-tringle.svg" alt="left-tringle icon">
+                    </button>
+                    <div class="table__head">
+                      <p>Type</p>
+                    </div>
+                  </div>
+                </th>
+                <th>
+                  <div class="table__head">
+                    <p>Price</p>
+                  </div>
+                </th>
+                <th>
+                  <div class="table__head">
+                    <p>Amt</p>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text green-text">Buy</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text red-text">Sell</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text green-text">Buy</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text red-text">Sell</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text green-text">Buy</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text red-text">Sell</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

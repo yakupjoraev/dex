@@ -1,0 +1,169 @@
+.wallet-manager {
+
+  // .wallet-manager__head
+
+  &__head {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    margin-bottom: 16px;
+  }
+
+  // .wallet-manager__checking
+
+  &__checking {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  // .wallet-manager__checking-text
+
+  &__checking-text {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: var(--text2);
+
+    &.active {
+      color: var(--text-1);
+    }
+  }
+
+  // .wallet-manager__new-wallet
+
+  &__new-wallet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+    border: 1px solid var(--green-2);
+    background-color: transparent;
+    outline: 0;
+    border-radius: 8px;
+    margin-left: auto;
+    padding: 8px 20px;
+
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--text-1);
+  }
+
+  // .wallet-manager__content
+
+  &__content {}
+
+  // .wallet-manager__list
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  // .wallet-manager__item
+
+  &__item {
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+    width: 100%;
+    border: 1px solid #212227;
+    border-radius: 4px;
+    padding: 8px;
+  }
+
+  // .wallet-manager__item-info
+
+  &__item-info {
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+  }
+
+  // .wallet-manager__item-wallet
+
+  &__item-wallet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 10px;
+    border: 1px solid var(--green-2);
+    border-radius: 4px;
+    background-color: #1e1e20;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    text-align: center;
+    color: var(--text-1);
+  }
+
+  // .wallet-manager__item-key
+
+  &__item-key {}
+
+  // .wallet-manager__item-sum
+
+  &__item-sum {
+    margin-left: auto;
+    line-height: 100%;
+    font-size: 14px;
+    color: var(--text-1);
+
+    &~.wallet-manager__item-dotted {
+      margin-left: 40px;
+    }
+  }
+
+  // .wallet-manager__item-dotted
+
+  &__item-dotted {
+    margin-left: auto;
+  }
+
+  // .wallet-manager__download
+
+  &__download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    padding: 18px;
+    border: 1px solid #ffc225;
+    border-radius: 8px;
+    width: 96%;
+    margin: 0 auto;
+
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffc225;
+  }
+
+  // .wallet-manager__item-name
+
+  &__item-name {
+    font-size: 14px;
+    color: var(--text-1);
+  }
+
+  // .wallet-manager__item-address
+
+  &__item-address {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--text2);
+  }
+}
