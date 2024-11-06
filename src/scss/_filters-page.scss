@@ -1,12 +1,12 @@
 .filters-page {
-  padding: 10px 0 40px;
+  padding: 10px 0 0;
 
   // .filters-page__form
 
   &__form {
     display: flex;
     flex-direction: column;
-    min-height: calc(100dvh - 180px);
+    min-height: calc(100dvh - 136px);
     height: 100%;
   }
 

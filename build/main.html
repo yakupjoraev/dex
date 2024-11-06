@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Index</title>
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
@@ -169,6 +170,20 @@
     <main>
       <div class="filters-head">
   <form action="#" class="filters-head__form">
+    <div class="filters-head__actions">
+      <div class="filters-head__action">
+        <button type="button"
+          class="filters-head__action-btn filters-head__action-btn--not-border filters-head__action-btn--large active"><span>Deposit</span>
+          <img width="12" height="12" src="./img/icons/deposit-icon.svg" alt="icon"></button>
+      </div>
+
+      <div class="filters-head__action">
+        <button type="button"
+          class="filters-head__action-btn filters-head__action-btn--not-border filters-head__action-btn--large "><span>Wallet</span>
+          <img width="12" height="12" src="./img/icons/wallet-icon.svg" alt="icon"></button>
+      </div>
+    </div>
+
     <div class="filters-head__row">
       <div class="filters-head__icons">
         <!-- если добавить класс active то иконка покраситься -->
@@ -189,6 +204,66 @@
           <button type="button" class="filters-head__action-btn active"><span>Advanced</span></button>
         </div>
       </div>
+    </div>
+
+    <div class="slider swiper">
+      <div class="slider-wrapper swiper-wrapper">
+        <div class="slider-slide swiper-slide">
+          <div class="nav__banner">
+            <div class="nav__banner-texts">
+              <h3 class="nav__banner-title">
+                Referral <br />
+                program
+              </h3>
+            </div>
+            <div class="nav__banner-picture">
+              <picture>
+                <source srcset="./img/reck/flying.webp 1x, ./img/reck/flying@2x.webp 2x" type="image/webp">
+                <source srcset="./img/reck/flying.png 1x, ./img/reck/flying@2x.png 2x" type="image/png">
+                <img width="132" src="./img/reck/flying.png" srcset="./img/reck/flying@2x.png" alt="Alt">
+              </picture>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-slide swiper-slide">
+          <div class="nav__banner">
+            <div class="nav__banner-texts">
+              <h3 class="nav__banner-title">
+                Referral <br />
+                program
+              </h3>
+            </div>
+            <div class="nav__banner-picture">
+              <picture>
+                <source srcset="./img/reck/flying.webp 1x, ./img/reck/flying@2x.webp 2x" type="image/webp">
+                <source srcset="./img/reck/flying.png 1x, ./img/reck/flying@2x.png 2x" type="image/png">
+                <img width="132" src="./img/reck/flying.png" srcset="./img/reck/flying@2x.png" alt="Alt">
+              </picture>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-slide swiper-slide">
+          <div class="nav__banner">
+            <div class="nav__banner-texts">
+              <h3 class="nav__banner-title">
+                Referral <br />
+                program
+              </h3>
+            </div>
+            <div class="nav__banner-picture">
+              <picture>
+                <source srcset="./img/reck/flying.webp 1x, ./img/reck/flying@2x.webp 2x" type="image/webp">
+                <source srcset="./img/reck/flying.png 1x, ./img/reck/flying@2x.png 2x" type="image/png">
+                <img width="132" src="./img/reck/flying.png" srcset="./img/reck/flying@2x.png" alt="Alt">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-pagination"></div>
     </div>
 
     <div class="filters-head__row">
@@ -726,7 +801,7 @@
 
       <li class="footer__item">
         <a class="footer__link" href="#">
-          <img class="footer__link-img" width="20" height="20" src="./img/footer/Support.svg" alt="Support icon">
+          <img class="footer__link-img" width="20" height="20" src="./img/footer/support.svg" alt="Support icon">
 
           <p class="footer__link-text">Support</p>
         </a>
@@ -755,6 +830,7 @@
 
 </body>
 
+<script src="./js/swiper-bundle.min.js"></script>
 <script src="./js/scripts.min.js"></script>
 
 </html>

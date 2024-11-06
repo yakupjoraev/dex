@@ -7,7 +7,7 @@
   &__form {
     display: flex;
     flex-direction: column;
-    row-gap: 24px;
+    row-gap: 12px;
   }
 
   // .filters-head__row
@@ -16,6 +16,10 @@
     display: flex;
     align-items: center;
     column-gap: 20px;
+
+    &--justify {
+      justify-content: space-between;
+    }
   }
 
   // .filters-head__icons
@@ -74,9 +78,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 12px;
+    column-gap: 8px;
+    padding: 8px 10px;
     width: 100%;
     min-height: 32px;
+    border: 1px solid var(--text2);
     border-radius: 8px;
     background-color: #272728;
     transition: background-color 0.2s linear, color 0.2s linear;
@@ -88,9 +94,26 @@
     text-align: center;
     color: var(--text2);
 
+    img {
+      filter: brightness(0) saturate(100%) invert(65%) sepia(5%) saturate(740%) hue-rotate(193deg) brightness(91%) contrast(87%);
+    }
+
+    &--not-border {
+      border: 0;
+    }
+
+    &--large {
+      padding: 12px;
+    }
+
     &.active {
       background-color: var(--green-2);
+      border-color: var(--green-2);
       color: var(--text-1);
+
+      img {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(305deg) brightness(103%) contrast(103%);
+      }
     }
 
   }

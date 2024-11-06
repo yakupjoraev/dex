@@ -1,0 +1,39 @@
+.slider {
+  max-width: 600px;
+  width: 100%;
+
+  .nav__banner {
+    margin: 0;
+  }
+}
+
+.slider-wrapper {}
+
+.slider-slide {
+  width: 100% !important;
+}
+
+.slider-pagination {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  bottom: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 4px;
+
+  .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    margin: 0 !important;
+    background: var(--text-1);
+    opacity: 1;
+
+    &.swiper-pagination-bullet-active {
+      width: 16px;
+      background-color: var(--green-2);
+      border-radius: 100px;
+    }
+  }
+}

@@ -1,6 +1,6 @@
 .referrals {
   padding: 50px 0;
-  min-height: calc(100dvh - 140px);
+
 
   .logo {
     margin-bottom: 32px;
@@ -11,7 +11,7 @@
   &__inner {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    min-height: calc(100dvh - 240px);
   }
 
   // .referrals__picture

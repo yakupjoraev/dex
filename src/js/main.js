@@ -205,6 +205,36 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+
+function slider() {
+  const container = document.querySelector('.slider');
+
+  if (!container) {
+    return null
+  }
+  const swiper = new Swiper('.slider', {
+    // Optional parameters
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+    },
+
+    // If we need pagination
+    pagination: {
+      el: '.slider-pagination',
+      type: 'bullets',
+      clickable: true,
+    },
+
+  });
+
+}
+
+slider();
+
+
 const openModalBtns = document.querySelectorAll('.open-modal-btn');
 const closeModalBtns = document.querySelectorAll('.close-modal-btn');
 const modals = document.querySelectorAll('.modal');

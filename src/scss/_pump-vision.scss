@@ -4,7 +4,7 @@
   .table-wrapper {
     border: 1px solid #212121;
     border-radius: 4px;
-    height: calc(100dvh - 200px);
+    min-height: calc(100dvh - 200px);
 
     &.table-wrapper--fit-height {
       height: auto;
