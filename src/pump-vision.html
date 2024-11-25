@@ -10,21 +10,27 @@
 </head>
 
 <body class="main__body">
-  <div class="wrapper">
-    <!-- Header -->
-    @@include('./html/_header.html')
 
-    <!-- Main Page -->
-    <main>
-      @@include('./html/_filters-head-pump-vision.html')
-      @@include('./html/_pump-vision.html')
-    </main>
+  <div class="desktop-wrapper">
+    <!-- Aside menu -->
+    @@include('./html/_aside.html')
 
-    <!-- Footer -->
-    @@include('./html/_footer.html')
+
+    <div class="wrapper">
+      <!-- Header -->
+      @@include('./html/_header.html')
+
+      <!-- Main Page -->
+      <main>
+        @@include('./html/_filters-head-pump-vision.html')
+        @@include('./html/_pump-vision.html')
+      </main>
+
+      <!-- Footer -->
+      @@include('./html/_footer.html')
+    </div>
+
   </div>
-
-
 </body>
 
 <script src="./js/scripts.min.js"></script>

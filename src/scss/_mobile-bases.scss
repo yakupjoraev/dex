@@ -1,0 +1,15 @@
+.mobile-dn {
+  display: none;
+
+  @media (min-width: $breakpoint992) {
+    display: flex;
+  }
+}
+
+.desktop-dn {
+  display: flex;
+
+  @media (min-width: $breakpoint992) {
+    display: none;
+  }
+}

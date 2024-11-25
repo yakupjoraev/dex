@@ -1,4 +1,59 @@
-.pump-vision {}
+.pump-vision {
+  @media (min-width: $breakpoint992) {
+    .tab__head {
+      margin-bottom: 0;
+    }
+
+    .tab__contents {
+      display: flex;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .tab__btns {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .tab__btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      column-gap: 20px;
+      padding: 10px 20px;
+      font-weight: 500;
+      font-size: 16px;
+      color: #fff;
+
+      &:not(:last-child) {
+        border-right: 1px solid #212121;
+      }
+
+      &.active {
+        background-color: transparent;
+        border-top: 1px solid var(--graphite);
+        border-bottom: 1px solid var(--graphite);
+      }
+    }
+
+    .filters-head__action {
+      width: fit-content;
+    }
+
+    .filters-head__action-btn {
+      width: fit-content;
+    }
+
+    .tab__content {
+      display: block;
+      padding: 24px 20px;
+
+      &:not(:last-child) {
+        border-right: 1px solid #212121;
+      }
+    }
+  }
+
+}
 
 .portfolio-analyzer {
   .table-wrapper {

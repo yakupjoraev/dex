@@ -10,21 +10,25 @@
 </head>
 
 <body class="main__body">
-  <div class="wrapper">
-    <!-- Header -->
-    @@include('./html/_header.html')
+  <div class="desktop-wrapper">
+    <!-- Aside menu -->
+    @@include('./html/_aside.html')
 
-    <!-- Main Page -->
-    <main>
-      @@include('./html/_filters-head-token-explorer.html')
-      @@include('./html/_token-explorer.html')
-    </main>
+    <div class="wrapper">
+      <!-- Header -->
+      @@include('./html/_header.html')
 
-    <!-- Footer -->
-    @@include('./html/_footer.html')
+      <!-- Main Page -->
+      <main>
+        @@include('./html/_filters-head-token-explorer.html')
+        @@include('./html/_token-explorer.html')
+      </main>
+
+      <!-- Footer -->
+      @@include('./html/_footer.html')
+    </div>
+
   </div>
-
-
 </body>
 
 <script src="./js/scripts.min.js"></script>

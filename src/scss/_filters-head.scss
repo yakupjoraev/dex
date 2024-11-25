@@ -1,6 +1,11 @@
 .filters-head {
+  width: 100%;
   padding: 12px 0;
   border-top: 1px solid var(--graphite);
+
+  @media (min-width: $breakpoint992) {
+    padding: 10px 20px;
+  }
 
   // .filters-head__form
 
@@ -8,6 +13,12 @@
     display: flex;
     flex-direction: column;
     row-gap: 12px;
+    width: 100%;
+
+    @media (min-width: $breakpoint992) {
+      flex-direction: row-reverse;
+      column-gap: 12px;
+    }
   }
 
   // .filters-head__row
@@ -19,6 +30,10 @@
 
     &--justify {
       justify-content: space-between;
+    }
+
+    &--full {
+      width: 100%;
     }
   }
 
@@ -84,7 +99,7 @@
     min-height: 32px;
     border: 1px solid var(--text2);
     border-radius: 8px;
-    background-color: #272728;
+    background-color: transparent;
     transition: background-color 0.2s linear, color 0.2s linear;
 
     font-family: var(--font-family);
@@ -95,6 +110,7 @@
     color: var(--text2);
 
     img {
+      transition: filter 0.2s linear;
       filter: brightness(0) saturate(100%) invert(65%) sepia(5%) saturate(740%) hue-rotate(193deg) brightness(91%) contrast(87%);
     }
 
@@ -116,6 +132,26 @@
       }
     }
 
+    @media (hover:hover) {
+      &:hover {
+        img {
+          filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(305deg) brightness(103%) contrast(103%);
+        }
+      }
+    }
+
+    @media (hover:hover) {
+      &:hover {
+        background-color: var(--green-2);
+        border-color: var(--green-2);
+        color: var(--text-1);
+      }
+    }
+
+    @media (min-width: $breakpoint992) {
+      min-width: 146px;
+      min-height: 40px;
+    }
   }
 
   // .filters-head__naming
@@ -139,13 +175,16 @@
   &__input-wrapper {
     position: relative;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
     margin-left: auto;
   }
 
   // .filters-head__input
 
   &__input {
-    width: 182px;
+    width: 140px;
     height: 40px;
     padding: 12px 26px 12px 18px;
     border-radius: 8px;
@@ -159,6 +198,10 @@
     font-size: 14px;
     color: var(--text2);
 
+    @media (min-width: $breakpoint992) {
+      width: 182px;
+    }
+
     &::placeholder {
       font-family: var(--font-family);
       font-weight: 400;
@@ -166,10 +209,22 @@
       color: var(--text-1);
     }
 
+    @media (hover:hover) {
+      &:hover {
+        border-color: var(--green-2);
+      }
+    }
+
     &:active,
     &:focus {
       border-color: var(--green-2);
     }
+  }
+
+  // .filters-head__input-text
+  &__input-text {
+    font-size: 12px;
+    color: var(--text2);
   }
 
   // .filters-head__input-icon

@@ -41,6 +41,7 @@
     justify-content: space-between;
     width: 100%;
     column-gap: 20px;
+    cursor: pointer;
   }
 
   // .checkbox__item-text
@@ -127,6 +128,12 @@
       font-weight: 400;
       font-size: 14px;
       color: var(--text2);
+    }
+
+    @media (hover:hover) {
+      &:hover {
+        border-color: var(--green-2);
+      }
     }
 
     &:active,
@@ -249,6 +256,12 @@
       font-weight: 400;
       font-size: 14px;
       color: var(--text2);
+    }
+
+    @media (hover:hover) {
+      &:hover {
+        border-color: var(--green-2);
+      }
     }
 
     &:active,

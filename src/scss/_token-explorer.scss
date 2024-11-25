@@ -1,0 +1,49 @@
+.token-explorer {
+  @media (min-width: $breakpoint992) {
+    .tab__head {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      flex-direction: row;
+      column-gap: 24px;
+      width: 100%;
+      margin-bottom: 0;
+      padding: 10px 20px;
+      border-top: 1px solid #212121;
+      border-bottom: 1px solid #212121;
+    }
+
+    .tab__times {
+      // margin-left: auto;
+    }
+
+    .filters-head__action {
+      width: fit-content;
+    }
+
+    .tab__time {
+      min-width: 54px;
+      cursor: pointer;
+    }
+
+    .tab__btns {
+      border: 1px solid #212121;
+      border-radius: 4px;
+    }
+
+    .tab__btn {
+      padding: 12px 18px;
+
+      &:not(:last-child) {
+        border-right: 1px solid #212121;
+      }
+    }
+
+    .tab__content {
+      padding: 24px 20px;
+    }
+
+    .tab__content {}
+  }
+}

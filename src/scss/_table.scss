@@ -1,5 +1,9 @@
 .table-wrapper {
   padding: 12px 0;
+
+  @media (min-width: $breakpoint992) {
+    padding: 0 0 12px;
+  }
 }
 
 .table {
@@ -10,6 +14,11 @@
   font-size: 11px;
   color: var(--text2);
 
+  .mobile-dn {
+    @media (min-width: $breakpoint992) {
+      display: table-cell;
+    }
+  }
 
   thead {
     border-top: 1px solid #212121;
@@ -27,6 +36,10 @@
     &:first-child {
       padding-left: 0;
       border-right: 1px solid #212121;
+
+      @media (min-width: $breakpoint992) {
+        padding-left: 20px;
+      }
     }
 
     &:last-child {
@@ -43,6 +56,10 @@
       padding-left: 0;
       padding-right: 10px;
       border-right: 1px solid #212121;
+
+      @media (min-width: $breakpoint992) {
+        padding-left: 20px;
+      }
     }
 
     &:last-child {
@@ -52,6 +69,8 @@
 
     .outline-btn {
       min-width: 74px;
+      width: fit-content;
+      margin: 0 auto;
       font-size: 11px;
     }
   }

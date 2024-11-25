@@ -99,6 +99,9 @@
   // .tab__info
 
   &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
   }
 
@@ -134,7 +137,10 @@
 
   // .tab__token-rows
 
-  &__token-rows {}
+  &__token-rows {
+    display: flex;
+    flex-direction: column;
+  }
 
   // .tab__token-row
 
@@ -142,6 +148,18 @@
     display: flex;
     align-items: flex-end;
     column-gap: 6px;
+
+    &:nth-child(1) {
+      font-weight: 400;
+      font-size: 12px;
+      color: #9295a5;
+    }
+
+    &:nth-child(2) {
+      font-weight: 600;
+      font-size: 14px;
+      color: #fff;
+    }
   }
 
   // .tab__token-name
@@ -238,6 +256,13 @@
     align-items: center;
     column-gap: 10px;
     margin-left: auto;
+
+    @media (min-width: $breakpoint992) {
+      margin-left: 0;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      column-gap: 80px;
+    }
   }
 
   // .tab__graphik-num
@@ -499,4 +524,16 @@
       color: var(--green-2);
     }
   }
+}
+
+.tab__graphik-num-label {
+  font-weight: 400;
+  font-size: 12px;
+  color: #9295a5;
+}
+
+.tab__info-item {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
 }

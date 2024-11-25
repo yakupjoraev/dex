@@ -3,7 +3,7 @@
 // Мобильное меню бургер
 function burgerMenu() {
   const burger = document.querySelector('.burger')
-  const menu = document.querySelector('.nav')
+  const menu = document.querySelector('.mobile-nav')
   const body = document.querySelector('body')
   burger.addEventListener('click', () => {
     if (!menu.classList.contains('active')) {
@@ -38,6 +38,20 @@ function burgerMenu() {
 }
 burgerMenu();
 
+function asideMini() {
+  const aside = document.querySelector('aside');
+
+  if (!aside) {
+    return null
+  }
+
+  const btn = aside.querySelector('.aside__btn-size');
+
+  btn.addEventListener('click', () => {
+    aside.classList.toggle('active')
+  })
+}
+asideMini();
 
 
 
@@ -239,12 +253,14 @@ slider();
 const openModalBtns = document.querySelectorAll('.open-modal-btn');
 const closeModalBtns = document.querySelectorAll('.close-modal-btn');
 const modals = document.querySelectorAll('.modal');
+const body = document.querySelector('body')
 
 openModalBtns.forEach(btn => {
   btn.addEventListener('click', () => {
     const modalId = btn.dataset.modalId;
     const modal = document.getElementById(modalId);
     modal.classList.add('show');
+    body.classList.add('locked');
   });
 });
 
@@ -252,12 +268,14 @@ closeModalBtns.forEach(btn => {
   btn.addEventListener('click', () => {
     const modal = btn.closest('.modal');
     modal.classList.remove('show');
+    body.classList.remove('locked');
   });
 });
 
 window.addEventListener('click', (event) => {
   if (event.target.classList.contains('modal')) {
     event.target.classList.remove('show');
+    body.classList.remove('locked');
   }
 });
 

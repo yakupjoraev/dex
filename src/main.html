@@ -11,20 +11,28 @@
 </head>
 
 <body class="main__body">
-  <div class="wrapper">
-    <!-- Header -->
-    @@include('./html/_header.html')
+  <div class="desktop-wrapper">
+    <!-- Aside menu -->
+    @@include('./html/_aside.html')
 
-    <!-- Main Page -->
-    <main>
-      @@include('./html/_filters-head.html')
-      @@include('./html/_main-table.html')
-    </main>
 
-    <!-- Footer -->
-    @@include('./html/_footer.html')
+    <div class="wrapper">
+      <!-- Header -->
+      @@include('./html/_header.html')
+
+      <!-- Main Page -->
+      <main>
+        @@include('./html/_filters-head.html')
+        @@include('./html/_main-table.html')
+      </main>
+
+      <!-- Footer -->
+      @@include('./html/_footer.html')
+      @@include('./html/_filters-page.html')
+    </div>
+
+
   </div>
-
 
 </body>
 

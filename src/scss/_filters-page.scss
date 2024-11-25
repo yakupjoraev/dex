@@ -6,8 +6,8 @@
   &__form {
     display: flex;
     flex-direction: column;
-    min-height: calc(100dvh - 136px);
-    height: 100%;
+    // min-height: calc(100dvh);
+    min-height: 100%;
   }
 
   // .filters-page__head
@@ -26,7 +26,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 30px;
-    padding: 0 10px;
+    // padding: 0 10px;
     margin-bottom: 40px;
   }
 
@@ -63,6 +63,16 @@
     font-weight: 400;
     font-size: 14px;
     color: var(--text2);
+
+    @media (hover:hover) {
+      &:hover {
+        color: var(--green-2);
+
+        img {
+          filter: brightness(0) saturate(100%) invert(39%) sepia(66%) saturate(1348%) hue-rotate(138deg) brightness(91%) contrast(94%);
+        }
+      }
+    }
   }
 
   // .filters-page__btn

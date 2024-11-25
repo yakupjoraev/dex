@@ -5,6 +5,10 @@
   .nav__banner {
     margin: 0;
   }
+
+  @media (min-width: $breakpoint992) {
+    display: none;
+  }
 }
 
 .slider-wrapper {}
