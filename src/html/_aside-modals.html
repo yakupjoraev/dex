@@ -741,4 +741,84 @@
       </div>
     </form>
   </div>
+
+  <button class="open-modal-btn" data-modal-id="filters-modal-portfolio-analyzer">Open Modal Portfolio Analyzer
+    filter</button>
+
+  <div class="filters-page aside-modal modal" id="filters-modal-portfolio-analyzer">
+    <form action="#" class="filters-page__form">
+      <button class="close-modal-btn">×</button>
+      <div class="filters-page__content">
+        <div class="filters-head__naming heading">
+          <h1 class="filters-head__name heading__title">Portfolio Analyzer Filter</h1>
+          <img width="20" height="20" src="./img/icons/filter-icon.svg" alt="icon">
+        </div>
+
+        <!-- <div class="selects">
+          <div class="select">
+            <label class="select__label" for="">Chains</label>
+            <select name="chains">
+              <option value="Choose Chain 1">Choose Chain 1</option>
+              <option value="Choose Chain 2">Choose Chain 2</option>
+              <option value="Choose Chain 3">Choose Chain 3</option>
+            </select>
+          </div>
+  
+          <div class="select">
+            <label class="select__label" for="">Wallets</label>
+            <select name="wallets">
+              <option value="Choose Chain 1">Choose Chain 1</option>
+              <option value="Choose Chain 2">Choose Chain 2</option>
+              <option value="Choose Chain 3">Choose Chain 3</option>
+            </select>
+          </div>
+        </div> -->
+
+        <div class="input-rows">
+          <div class="input-row">
+            <label class="input-row__label" for="">Chains</label>
+
+            <div class="custom-dropdown">
+              <div class="dropdown-relative">
+                <div class="dropdown-toggle">Select an option</div>
+                <input type="hidden" class="dropdown-value" value="">
+                <img class="dropdown-toggle-icon" src="./img/icons/select-tringle.svg" alt="select-tringle icon">
+              </div>
+              <ul class="dropdown-menu">
+                <li class="dropdown-selected" data-value="Choose Chain 1"> Choose Chain 1</li>
+                <li data-value="Choose Chain 2">Choose Chain 2
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="input-row">
+            <label class="input-row__label" for="">Wallets</label>
+
+            <div class="custom-dropdown">
+              <div class="dropdown-relative">
+                <div class="dropdown-toggle">Select an option</div>
+                <input type="hidden" class="dropdown-value" value="">
+                <img class="dropdown-toggle-icon" src="./img/icons/select-tringle.svg" alt="select-tringle icon">
+              </div>
+              <ul class="dropdown-menu">
+                <li class="dropdown-selected" data-value="Choose Chain 1"> Choose Chain 1</li>
+                <li data-value="Choose Chain 2">Choose Chain 2
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="filters-page__footer">
+        <button type="reset" class="filters-page__btn-reset">
+          <img src="./img/icons/btn-reset.svg" alt="reset icon">
+          <span>Reset</span>
+        </button>
+
+        <button type="button" class="filters-page__btn btn"><span>Apply</span></button>
+      </div>
+    </form>
+  </div>
 </div>

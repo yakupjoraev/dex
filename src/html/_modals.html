@@ -474,4 +474,84 @@
       </div>
     </div>
   </div>
+
+
+
+  <button class="open-modal-btn" data-modal-id="new-withdraw-wallet-modal">Open Modal New Withdraw Wallet</button>
+
+  <div class="modal" id="new-withdraw-wallet-modal">
+    <div class="modal-content modal-content--mini">
+      <button class="close-modal-btn">&times;</button>
+
+      <div class="modal__inner">
+        <div class="modal__head">
+          <h3 class="modal__title modal__title--center">
+            <span>New Withdraw Wallet</span>
+          </h3>
+        </div>
+
+        <div class="modal__content">
+          <div class="new-wallet">
+            <div class="new-wallet__rows">
+              <div class="new-wallet__row">
+                <div class="new-wallet__row-descr">Wallet Type</div>
+                <div class="input-row__radios">
+                  <div class="input-row__radio">
+                    <input class="input-row__radio-input" type="radio" name="Sell MEV Protection" id="sell-mev-1"
+                      checked>
+
+                    <label class="input-row__radio-label" for="sell-mev-1">
+                      <div class="input-row__tokens">
+                        <div class="input-row__token"><img width="20" height="20" src="./img/tokens/binance.svg"
+                            alt="icon"></div>
+                        <div class="input-row__token"><img width="20" height="20" src="./img/tokens/binance.svg"
+                            alt="icon"></div>
+                        <div class="input-row__token"><img width="20" height="20" src="./img/tokens/binance.svg"
+                            alt="icon"></div>
+                      </div>
+                      <span>EVM</span>
+                    </label>
+                  </div>
+
+                  <div class="input-row__radio">
+                    <input class="input-row__radio-input" type="radio" name="Sell MEV Protection" id="sell-mev-2">
+
+                    <label class="input-row__radio-label" for="sell-mev-2">
+                      <div class="input-row__tokens">
+                        <div class="input-row__token"><img width="20" height="20" src="./img/tokens/binance.svg"
+                            alt="icon">
+                        </div>
+                      </div>
+                      <span>Solana</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="new-wallet__row">
+                <div class="new-wallet__row-descr">Wallet Name</div>
+                <input class="new-wallet__input" type="text" placeholder="Name">
+              </div>
+
+              <div class="new-wallet__row">
+                <div class="new-wallet__row-descr">Wallet Address</div>
+                <input class="new-wallet__input" type="text" placeholder="0x1234569a7sda897da897sd89as7d879d">
+              </div>
+
+              <div class="new-wallet__row">
+                <div class="new-wallet__row-descr"></div>
+                <div class="new-wallet__btns">
+                  <button type="reset" class="new-wallet__btn btn-outline">Cancel</button>
+                  <button type="submit" class="new-wallet__btn btn btn--large">Apply</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal__footer"></div>
+      </div>
+    </div>
+  </div>
+
 </div>

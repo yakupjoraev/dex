@@ -22,6 +22,7 @@
 
     <div class="tab__contents">
       <div class="tab__content active" data-tab-content="Wallets">
+        <h4 class="tab__content-label mobile-dn">EVM Wallets</h4>
         <div class="wallet-manager__head">
           <div class="wallet-manager__checking">
             <div class="wallet-manager__checking-text active">Wallets</div>
@@ -80,6 +81,7 @@
       </div>
 
       <div class="tab__content" data-tab-content="Withdraw">
+        <h4 class="tab__content-label mobile-dn">Withdraw Wallets</h4>
         <div class="wallet-manager__head">
           <div class="wallet-manager__checking">
             <div class="wallet-manager__checking-text active">
@@ -136,6 +138,348 @@
           </ul>
         </div>
       </div>
+
+      <div class="tab__content mobile-dn tab__content--absulate">
+        <div class="wallet-actions">
+          <div class="wallet-actions__head">
+            <div class="wallet-actions__row">
+              <h4 class="wallet-actions__label">Main Wallet</h4>
+              <img width="16" height="16" src="./img/icons/wallet-icon.svg" alt="icon">
+            </div>
+            <div class="wallet-actions__row">
+              <div class="wallet-actions__row">
+                <div class="wallet-actions__sum-large">600.0054</div>
+                <span>ETH</span>
+              </div>
+            </div>
+            <div class="wallet-actions__row">
+              <div class="wallet-actions__sum-small">~1 474 466.00</div>
+              <span>USDT</span>
+            </div>
+          </div>
+
+          <ul class="wallet-actions__list">
+            <li class="wallet-actions__item">
+              <button type="button" class="wallet-actions__btn">
+                <div class="wallet-actions__btn-picture">
+                  <img width="24" height="24" src="./img/icons/wallet-actions-1.svg" alt="icon">
+                </div>
+
+                <p class="wallet-actions__btn-text">Deposit</p>
+              </button>
+            </li>
+
+            <li class="wallet-actions__item">
+              <button type="button" class="wallet-actions__btn">
+                <div class="wallet-actions__btn-picture">
+                  <img width="24" height="24" src="./img/icons/wallet-actions-2.svg" alt="icon">
+                </div>
+
+                <p class="wallet-actions__btn-text">Withdraw</p>
+              </button>
+            </li>
+
+            <li class="wallet-actions__item">
+              <button type="button" class="wallet-actions__btn">
+                <div class="wallet-actions__btn-picture">
+                  <img width="24" height="24" src="./img/icons/wallet-actions-3.svg" alt="icon">
+                </div>
+
+                <p class="wallet-actions__btn-text">Distribute</p>
+              </button>
+            </li>
+
+            <li class="wallet-actions__item">
+              <button type="button" class="wallet-actions__btn">
+                <div class="wallet-actions__btn-picture">
+                  <img width="32" height="32" src="./img/icons/wallet-actions-4.svg" alt="icon">
+                </div>
+
+                <p class="wallet-actions__btn-text">Consolidate</p>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tab__content mobile-dn">
+        <h4 class="tab__content-label mobile-dn">Trade History</h4>
+        <div class="table-wrapper">
+          <table class="table">
+            <thead>
+              <tr>
+                <th colspan="2">
+                  <div class="table__head table__left-text">
+                    <p>Time ago</p>
+                  </div>
+                </th>
+                <th>
+                  <div class="table__relative">
+                    <button type="button" class="table__left-btn desktop-dn">
+                      <img width="6" src="./img/icons/left-tringle.svg" alt="left-tringle icon">
+                    </button>
+                    <div class="table__head">
+                      <p>Type</p>
+                    </div>
+                  </div>
+                </th>
+                <th>
+                  <div class="table__head">
+                    <p>Price</p>
+                  </div>
+                </th>
+                <th>
+                  <div class="table__head">
+                    <p>Amt</p>
+                  </div>
+                </th>
+
+                <th class="mobile-dn">
+                  <div class="table__head">
+                    <p>Total</p>
+                  </div>
+                </th>
+
+                <th class="mobile-dn">
+                  <div class="table__head">
+                    <p>Maker</p>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text green-text">Buy</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+
+                <td class="mobile-dn">
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+
+                <td class="mobile-dn">
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text red-text">Sell</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+
+                <td class="mobile-dn">
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+
+                <td class="mobile-dn">
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text green-text">Buy</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+
+                <td class="mobile-dn">
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+
+                <td class="mobile-dn">
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text red-text">Sell</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+
+                <td class="mobile-dn">
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+
+                <td class="mobile-dn">
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text green-text">Buy</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+
+                <td class="mobile-dn">
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+
+                <td class="mobile-dn">
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <div class="table__info table__row-direction">
+                    <div class="table__inf-text">
+                      <p class="table__bold-text">2D 04H 56M </p>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text red-text">Sell</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">$456.25</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+
+                <td class="mobile-dn">
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+
+                <td class="mobile-dn">
+                  <div class="table__column-direction">
+                    <p class="table__bold-text">49.0056</p>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
 
     </div>
   </div>

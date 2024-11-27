@@ -10,9 +10,170 @@
 </head>
 
 <body class="main__body">
-  <div class="wrapper">
-    <!-- Header -->
-    <header class="header">
+  <div class="desktop-wrapper">
+    <!-- Aside menu -->
+    <aside class="aside">
+  <div class="aside__inner">
+    <div class="aside__header">
+      <button type="button" class="aside__btn-size">
+        <img width="16" height="16" src="./img/icons/aside-btn-arrow.svg" alt="arrow">
+      </button>
+
+      <a class="logo" href="#"><img class="log__img" width="92" src="./img/logo.svg" alt="logo"></a>
+    </div>
+
+    <div class="aside__main">
+      <nav class="nav aside-nav">
+        <ul class="nav__list">
+          <li class="nav__item active">
+            <a class="nav__link" href="#">
+              <div class="nav__link-icon">
+                <img src="./img/icons/nav-1.svg" width="20" height="20" alt="icon">
+              </div>
+
+              <p class="nav__link-text">Chains</p>
+
+              <img class="nav__link-arrow" src="./img/icons/nav-arrow.svg" alt="arrow icon">
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              <div class="nav__link-icon">
+                <img src="./img/icons/nav-2.svg" width="20" height="20" alt="icon">
+              </div>
+
+              <p class="nav__link-text">New Pairs</p>
+
+              <img class="nav__link-arrow" src="./img/icons/nav-arrow.svg" alt="arrow icon">
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              <div class="nav__link-icon">
+                <img src="./img/icons/nav-3.svg" width="20" height="20" alt="icon">
+              </div>
+
+              <p class="nav__link-text">Pump Vision</p>
+
+              <img class="nav__link-arrow" src="./img/icons/nav-arrow.svg" alt="arrow icon">
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              <div class="nav__link-icon">
+                <img src="./img/icons/nav-4.svg" width="20" height="20" alt="icon">
+              </div>
+
+              <p class="nav__link-text">Explore</p>
+
+              <img class="nav__link-arrow" src="./img/icons/nav-arrow.svg" alt="arrow icon">
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              <div class="nav__link-icon">
+                <img src="./img/icons/nav-5.svg" width="20" height="20" alt="icon">
+              </div>
+
+              <p class="nav__link-text">Automation</p>
+
+              <img class="nav__link-arrow" src="./img/icons/nav-arrow.svg" alt="arrow icon">
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              <div class="nav__link-icon">
+                <img src="./img/icons/nav-6.svg" width="20" height="20" alt="icon">
+              </div>
+
+              <p class="nav__link-text">Portfolio</p>
+
+              <img class="nav__link-arrow" src="./img/icons/nav-arrow.svg" alt="arrow icon">
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              <div class="nav__link-icon">
+                <img src="./img/icons/nav-7.svg" width="20" height="20" alt="icon">
+              </div>
+
+              <p class="nav__link-text">Wallet Manager</p>
+
+              <img class="nav__link-arrow" src="./img/icons/nav-arrow.svg" alt="arrow icon">
+            </a>
+          </li>
+        </ul>
+
+        <div class="nav__border"></div>
+
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              <div class="nav__link-icon">
+                <img src="./img/icons/settings.svg" width="20" height="20" alt="icon">
+              </div>
+
+              <p class="nav__link-text">Settings</p>
+
+              <img class="nav__link-arrow" src="./img/icons/nav-arrow.svg" alt="arrow icon">
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              <div class="nav__link-icon">
+                <img src="./img/icons/logout.svg" width="20" height="20" alt="icon">
+              </div>
+
+              <p class="nav__link-text">Logout</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+
+    <div class="nav__filters">
+      <div class="filters-head__actions">
+        <div class="filters-head__balance">
+          <p class="filters-head__balance-text">Balance</p>
+          <p class="filters-head__balance-sum">$6K</p>
+        </div>
+        <div class="filters-head__action">
+          <button type="button"
+            class="filters-head__action-btn filters-head__action-btn--not-border filters-head__action-btn--large active"><span>Deposit</span>
+            <img width="12" height="12" src="./img/icons/deposit-icon.svg" alt="icon"></button>
+        </div>
+
+        <div class="filters-head__action">
+          <button type="button"
+            class="filters-head__action-btn filters-head__action-btn--not-border filters-head__action-btn--large "><span>Wallet</span>
+            <img width="12" height="12" src="./img/icons/wallet-icon.svg" alt="icon"></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="aside__footer">
+      <a class="aside__banner" href="#">
+        <h3 class="aside__banner-label">sniper function</h3>
+
+        <div class="aside__banner-picture">
+          <img width="84" height="84" src="./img/aside-banner-pic.png" alt=" sniper function pic">
+        </div>
+      </a>
+    </div>
+  </div>
+</aside>
+
+    <div class="wrapper">
+      <!-- Header -->
+      <header class="header">
   <div class="header__inner">
     <a class="logo" href="#"><img class="log__img" width="92" src="./img/logo.svg" alt="logo"></a>
 
@@ -185,9 +346,9 @@
   </nav>
 </header>
 
-    <!-- Main Page -->
-    <main>
-      <div class="support">
+      <!-- Main Page -->
+      <main>
+        <div class="support">
   <div class="support__inner">
     <div class="support__head">
       <div class="heading">
@@ -278,10 +439,10 @@
     </div>
   </div>
 </div>
-    </main>
+      </main>
 
-    <!-- Footer -->
-    <footer class="footer">
+      <!-- Footer -->
+      <footer class="footer">
   <div class="footer__inner">
     <ul class="footer__list">
       <li class="footer__item active">
@@ -326,9 +487,9 @@
     </ul>
   </div>
 </footer>
+    </div>
+
   </div>
-
-
 </body>
 
 <script src="./js/scripts.min.js"></script>

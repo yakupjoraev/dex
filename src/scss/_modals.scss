@@ -93,6 +93,10 @@
     }
   }
 
+  &--mini {
+    max-width: 544px;
+  }
+
   @media (min-width: $breakpoint992) {
     padding: 24px 20px;
   }
@@ -307,5 +311,111 @@
     font-size: 11px;
     text-align: center;
     color: #545454;
+  }
+}
+
+.new-wallet {
+
+  // .new-wallet__rows
+
+  &__rows {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+
+  // .new-wallet__row
+
+  &__row {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    column-gap: 20px;
+
+    @media (max-width: $breakpoint480) {
+      grid-template-columns: 80px 1fr;
+      column-gap: 10px;
+
+      .input-row__radios {
+        flex-direction: column;
+        row-gap: 10px;
+      }
+    }
+  }
+
+  // .new-wallet__row-descr
+
+  &__row-descr {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--text-1);
+
+    @media (max-width: $breakpoint480) {
+      font-size: 12px;
+    }
+  }
+
+  // .new-wallet__input
+
+  &__input {
+    border: 1px solid transparent;
+    outline: 0;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 8px;
+    height: 40px;
+    background-color: #272728;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--text-1);
+    cursor: pointer;
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 14px;
+      color: #9295a5;
+    }
+
+    @media (hover:hover) {
+      &:hover {
+        border-color: var(--green-2);
+      }
+    }
+
+    &:active,
+    &:focus {
+      border-color: var(--green-2);
+    }
+
+  }
+
+  // .new-wallet__btns
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+  }
+
+  // .new-wallet__btn
+
+  &__btn {
+    max-width: 188px;
+
+    &.btn-outline {
+      background-color: transparent;
+      border: 0;
+      outline: 0;
+      font-weight: 400;
+      font-size: 14px;
+      color: #9295a5;
+
+      @media (hover:hover) {
+        &:hover {
+          color: var(--green-2);
+        }
+      }
+    }
   }
 }

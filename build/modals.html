@@ -663,6 +663,86 @@
       </div>
     </div>
   </div>
+
+
+
+  <button class="open-modal-btn" data-modal-id="new-withdraw-wallet-modal">Open Modal New Withdraw Wallet</button>
+
+  <div class="modal" id="new-withdraw-wallet-modal">
+    <div class="modal-content modal-content--mini">
+      <button class="close-modal-btn">&times;</button>
+
+      <div class="modal__inner">
+        <div class="modal__head">
+          <h3 class="modal__title modal__title--center">
+            <span>New Withdraw Wallet</span>
+          </h3>
+        </div>
+
+        <div class="modal__content">
+          <div class="new-wallet">
+            <div class="new-wallet__rows">
+              <div class="new-wallet__row">
+                <div class="new-wallet__row-descr">Wallet Type</div>
+                <div class="input-row__radios">
+                  <div class="input-row__radio">
+                    <input class="input-row__radio-input" type="radio" name="Sell MEV Protection" id="sell-mev-1"
+                      checked>
+
+                    <label class="input-row__radio-label" for="sell-mev-1">
+                      <div class="input-row__tokens">
+                        <div class="input-row__token"><img width="20" height="20" src="./img/tokens/binance.svg"
+                            alt="icon"></div>
+                        <div class="input-row__token"><img width="20" height="20" src="./img/tokens/binance.svg"
+                            alt="icon"></div>
+                        <div class="input-row__token"><img width="20" height="20" src="./img/tokens/binance.svg"
+                            alt="icon"></div>
+                      </div>
+                      <span>EVM</span>
+                    </label>
+                  </div>
+
+                  <div class="input-row__radio">
+                    <input class="input-row__radio-input" type="radio" name="Sell MEV Protection" id="sell-mev-2">
+
+                    <label class="input-row__radio-label" for="sell-mev-2">
+                      <div class="input-row__tokens">
+                        <div class="input-row__token"><img width="20" height="20" src="./img/tokens/binance.svg"
+                            alt="icon">
+                        </div>
+                      </div>
+                      <span>Solana</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="new-wallet__row">
+                <div class="new-wallet__row-descr">Wallet Name</div>
+                <input class="new-wallet__input" type="text" placeholder="Name">
+              </div>
+
+              <div class="new-wallet__row">
+                <div class="new-wallet__row-descr">Wallet Address</div>
+                <input class="new-wallet__input" type="text" placeholder="0x1234569a7sda897da897sd89as7d879d">
+              </div>
+
+              <div class="new-wallet__row">
+                <div class="new-wallet__row-descr"></div>
+                <div class="new-wallet__btns">
+                  <button type="reset" class="new-wallet__btn btn-outline">Cancel</button>
+                  <button type="submit" class="new-wallet__btn btn btn--large">Apply</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal__footer"></div>
+      </div>
+    </div>
+  </div>
+
 </div>
       <div class="modals-wrapper">
   <button class="open-modal-btn" data-modal-id="filters-modal">Open Modal Main filters</button>
@@ -1392,6 +1472,86 @@
                 <p class="checkbox__item-text">MEV Protection</p>
                 <div class="checkbox__item-square"></div>
               </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="filters-page__footer">
+        <button type="reset" class="filters-page__btn-reset">
+          <img src="./img/icons/btn-reset.svg" alt="reset icon">
+          <span>Reset</span>
+        </button>
+
+        <button type="button" class="filters-page__btn btn"><span>Apply</span></button>
+      </div>
+    </form>
+  </div>
+
+  <button class="open-modal-btn" data-modal-id="filters-modal-portfolio-analyzer">Open Modal Portfolio Analyzer
+    filter</button>
+
+  <div class="filters-page aside-modal modal" id="filters-modal-portfolio-analyzer">
+    <form action="#" class="filters-page__form">
+      <button class="close-modal-btn">×</button>
+      <div class="filters-page__content">
+        <div class="filters-head__naming heading">
+          <h1 class="filters-head__name heading__title">Portfolio Analyzer Filter</h1>
+          <img width="20" height="20" src="./img/icons/filter-icon.svg" alt="icon">
+        </div>
+
+        <!-- <div class="selects">
+          <div class="select">
+            <label class="select__label" for="">Chains</label>
+            <select name="chains">
+              <option value="Choose Chain 1">Choose Chain 1</option>
+              <option value="Choose Chain 2">Choose Chain 2</option>
+              <option value="Choose Chain 3">Choose Chain 3</option>
+            </select>
+          </div>
+  
+          <div class="select">
+            <label class="select__label" for="">Wallets</label>
+            <select name="wallets">
+              <option value="Choose Chain 1">Choose Chain 1</option>
+              <option value="Choose Chain 2">Choose Chain 2</option>
+              <option value="Choose Chain 3">Choose Chain 3</option>
+            </select>
+          </div>
+        </div> -->
+
+        <div class="input-rows">
+          <div class="input-row">
+            <label class="input-row__label" for="">Chains</label>
+
+            <div class="custom-dropdown">
+              <div class="dropdown-relative">
+                <div class="dropdown-toggle">Select an option</div>
+                <input type="hidden" class="dropdown-value" value="">
+                <img class="dropdown-toggle-icon" src="./img/icons/select-tringle.svg" alt="select-tringle icon">
+              </div>
+              <ul class="dropdown-menu">
+                <li class="dropdown-selected" data-value="Choose Chain 1"> Choose Chain 1</li>
+                <li data-value="Choose Chain 2">Choose Chain 2
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="input-row">
+            <label class="input-row__label" for="">Wallets</label>
+
+            <div class="custom-dropdown">
+              <div class="dropdown-relative">
+                <div class="dropdown-toggle">Select an option</div>
+                <input type="hidden" class="dropdown-value" value="">
+                <img class="dropdown-toggle-icon" src="./img/icons/select-tringle.svg" alt="select-tringle icon">
+              </div>
+              <ul class="dropdown-menu">
+                <li class="dropdown-selected" data-value="Choose Chain 1"> Choose Chain 1</li>
+                <li data-value="Choose Chain 2">Choose Chain 2
+                </li>
+              </ul>
             </div>
           </div>
         </div>

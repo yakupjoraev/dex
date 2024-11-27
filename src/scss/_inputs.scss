@@ -192,6 +192,7 @@
     font-weight: 400;
     font-size: 14px;
     color: var(--text-1);
+    cursor: pointer;
 
     span {
       font-size: 11px;
@@ -481,5 +482,45 @@
     font-size: 14px;
     text-align: center;
     color: var(--text2);
+  }
+}
+
+.input-row {
+
+  // .input-row__tokens
+
+  &__tokens {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    min-width: 40px;
+    max-width: 40px;
+    margin-right: 12px;
+    overflow: hidden;
+  }
+
+  // .input-row__token
+
+  &__token {
+
+    &:nth-child(1) {
+      margin-left: 0px;
+      z-index: 2;
+    }
+
+    &:nth-child(2) {
+      margin-left: -10px;
+      z-index: 1;
+    }
+
+    &:nth-child(3) {
+      margin-left: -10px;
+      z-index: 0;
+    }
+
+    &:nth-child(4) {
+      margin-left: -10px;
+      z-index: 0;
+    }
   }
 }
