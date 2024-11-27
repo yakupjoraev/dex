@@ -3781,6 +3781,10 @@ body.locked {
   color: var(--text-1);
 }
 
+.sniper .tab__token {
+  width: 100%;
+}
+
 .slider {
   max-width: 600px;
   width: 100%;
@@ -3935,6 +3939,9 @@ body.locked {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-column-gap: 12px;
+     -moz-column-gap: 12px;
+          column-gap: 12px;
   width: 100%;
 }
 
@@ -4933,6 +4940,7 @@ body.locked {
   }
 
   .terminal .table th:last-child {
+    padding-right: 10px;
     text-align: right;
   }
 
@@ -5029,6 +5037,84 @@ body.locked {
             column-gap: 40px;
   }
 
+  .sniper-wrapper .filters-head {
+    padding: 20px 20px 0;
+  }
+
+  .sniper .table-wrapper {
+    border: 0;
+    min-height: 100%;
+  }
+
+  .sniper .table th:first-child,
+  .sniper .table td:first-child {
+    padding-left: 0;
+    border-right: 0;
+  }
+
+  .sniper .table th:last-child {
+    padding-right: 10px;
+    text-align: right;
+  }
+
+  .sniper .outline-btn {
+    padding: 10px 16px;
+  }
+
+  .sniper .tab__head {
+    display: none;
+  }
+
+  .sniper .tab__contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: calc(100% - 300px);
+  }
+
+  .sniper .tab__content {
+    padding: 20px;
+    display: block;
+  }
+
+  .sniper .tab__content:nth-child(1) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  .sniper .tab__content:nth-child(2) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .sniper .tab__content:nth-child(3) {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    border-top: 1px solid #212121;
+  }
+
+  .sniper .tab__token {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .sniper .tab__content--absulate {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    border-left: 1px solid #212121;
+  }
+
   .slider {
     display: none;
   }
@@ -5084,6 +5170,14 @@ body.locked {
 }
 
 @media (min-width: 1449.98px) {
+  .sniper .tab__contents {
+    width: calc(100% - 394px);
+  }
+
+  .sniper .tab__content--absulate {
+    width: 394px;
+  }
+
   .tab__content-doubles {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

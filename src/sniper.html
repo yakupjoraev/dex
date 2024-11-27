@@ -10,21 +10,28 @@
 </head>
 
 <body class="main__body">
-  <div class="wrapper">
-    <!-- Header -->
-    @@include('./html/_header.html')
+  <div class="desktop-wrapper">
+    <!-- Aside menu -->
+    @@include('./html/_aside.html')
 
-    <!-- Main Page -->
-    <main>
-      @@include('./html/_filters-head-sniper.html')
-      @@include('./html/_sniper.html')
-    </main>
 
-    <!-- Footer -->
-    @@include('./html/_footer.html')
+    <div class="wrapper">
+      <!-- Header -->
+      @@include('./html/_header.html')
+
+      <!-- Main Page -->
+      <main>
+        <div class="sniper-wrapper">
+          @@include('./html/_filters-head-sniper.html')
+          @@include('./html/_sniper.html')
+        </div>
+      </main>
+
+      <!-- Footer -->
+      @@include('./html/_footer.html')
+    </div>
+
   </div>
-
-
 </body>
 
 <script src="./js/scripts.min.js"></script>
