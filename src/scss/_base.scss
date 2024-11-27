@@ -9,6 +9,7 @@
   width: 100%;
 
   main {
+    position: relative;
     flex-grow: 1;
     padding: 0 10px 80px;
 
@@ -60,6 +61,21 @@
   text-align: center;
   color: var(--text-1);
 
+
+
+  @media (hover:hover) {
+    &:hover {
+      border-color: var(--green-2);
+      background-color: transparent;
+    }
+  }
+
+  &:active,
+  &:focus {
+    border-color: var(--green-2);
+    background-color: transparent;
+  }
+
   &--mini {
     font-size: 12px;
     min-height: 32px;
@@ -83,21 +99,21 @@
     background-color: transparent;
     font-weight: 600;
     font-size: 10px;
-  }
 
+    @media (hover:hover) {
+      &:hover {
+        border-color: var(--red);
+        background-color: var(--red);
+      }
+    }
 
-  @media (hover:hover) {
-    &:hover {
-      border-color: var(--green-2);
-      background-color: transparent;
+    &:active,
+    &:focus {
+      border-color: var(--red);
+      background-color: var(--red);
     }
   }
 
-  &:active,
-  &:focus {
-    border-color: var(--green-2);
-    background-color: transparent;
-  }
 }
 
 .second-btn {
@@ -156,6 +172,19 @@
   color: var(--text-1);
   transition: 0.2s linear;
 
+  @media (hover:hover) {
+    &:hover {
+      border-color: var(--green-2);
+      background-color: var(--green-2);
+    }
+  }
+
+  &:active,
+  &:focus {
+    border-color: var(--green-2);
+    background-color: var(--green-2);
+  }
+
   &--mini {
     font-size: 12px;
     min-height: 32px;
@@ -171,24 +200,27 @@
     font-size: 11px;
     border-color: var(--red);
     min-height: 48px;
+
+
+    @media (hover:hover) {
+      &:hover {
+        border-color: var(--red);
+        background-color: var(--red);
+      }
+    }
+
+    &:active,
+    &:focus {
+      border-color: var(--red);
+      background-color: var(--red);
+    }
   }
 
   &--fit-width {
     width: fit-content;
   }
 
-  @media (hover:hover) {
-    &:hover {
-      border-color: var(--green-2);
-      background-color: var(--green-2);
-    }
-  }
 
-  &:active,
-  &:focus {
-    border-color: var(--green-2);
-    background-color: var(--green-2);
-  }
 }
 
 .green-text {

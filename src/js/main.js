@@ -117,28 +117,32 @@ function tabs() {
 tabs();
 
 function subTabs() {
-  const container = document.querySelector('.subtabs');
+  const containers = document.querySelectorAll('.subtabs');
 
-  if (!container) {
+  if (!containers) {
     return null
   }
 
-  const tabButtons = document.querySelectorAll('.subtabs__btn');
-  const tabContents = document.querySelectorAll('.subtabs__content');
+  containers.forEach(container => {
+    const tabButtons = container.querySelectorAll('.subtabs__btn');
+    const tabContents = container.querySelectorAll('.subtabs__content');
 
-  tabButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      const target = button.getAttribute('data-subtabs-btn');
+    tabButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const target = button.getAttribute('data-subtabs-btn');
 
-      // Удаляем класс active у всех кнопок и контента
-      tabButtons.forEach(btn => btn.classList.remove('active'));
-      tabContents.forEach(content => content.classList.remove('active'));
+        // Удаляем класс active у всех кнопок и контента
+        tabButtons.forEach(btn => btn.classList.remove('active'));
+        tabContents.forEach(content => content.classList.remove('active'));
 
-      // Добавляем класс active к выбранной кнопке и соответствующему контенту
-      button.classList.add('active');
-      document.querySelector(`.subtabs__content[data-subtabs-content="${target}"]`).classList.add('active');
+        // Добавляем класс active к выбранной кнопке и соответствующему контенту
+        button.classList.add('active');
+        container.querySelector(`.subtabs__content[data-subtabs-content="${target}"]`).classList.add('active');
+      });
     });
   });
+
+
 }
 
 subTabs();

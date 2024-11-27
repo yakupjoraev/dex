@@ -10,21 +10,26 @@
 </head>
 
 <body class="main__body">
-  <div class="wrapper">
-    <!-- Header -->
-    @@include('./html/_header.html')
+  <div class="desktop-wrapper">
+    <!-- Aside menu -->
+    @@include('./html/_aside.html')
 
-    <!-- Main Page -->
-    <main>
-      @@include('./html/_filters-head-portfolio-analyzer.html')
-      @@include('./html/_portfolio-analyzer.html')
-    </main>
 
-    <!-- Footer -->
-    @@include('./html/_footer.html')
+    <div class="wrapper">
+      <!-- Header -->
+      @@include('./html/_header.html')
+
+      <!-- Main Page -->
+      <main>
+        @@include('./html/_filters-head-portfolio-analyzer.html')
+        @@include('./html/_portfolio-analyzer.html')
+      </main>
+
+      <!-- Footer -->
+      @@include('./html/_footer.html')
+    </div>
+
   </div>
-
-
 </body>
 
 <script src="./js/scripts.min.js"></script>

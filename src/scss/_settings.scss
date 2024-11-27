@@ -2,4 +2,81 @@
   .filters-page__form {
     min-height: calc(100dvh - 240px);
   }
+
+  @media (min-width: $breakpoint992) {
+    padding: 24px 20px;
+
+    .tab__head {
+      margin-bottom: 24px;
+    }
+
+    .tab__btns {
+      border-right: 1px solid #212121;
+      border-left: 1px solid #212121;
+    }
+
+    .filters-page__content {
+      // max-width: 374px;
+    }
+
+    .input-rows {
+      max-width: 374px;
+      width: 100%;
+    }
+
+    .twofactor__authentication .input-rows {
+      margin: 0 auto;
+    }
+  }
+
+}
+
+
+
+.settings-wrapper {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 80px);
+  background-color: rgba(4, 4, 4, 0.6);
+  overflow: hidden;
+
+  .filters-head {
+    background-color: #161617;
+    padding: 12px 10px;
+  }
+
+  .settings {
+    padding: 0 10px;
+    height: calc(100% - 58px);
+    background-color: #161617;
+  }
+
+  @media (min-width: $breakpoint992) {
+    height: 100%;
+
+    .filters-head {
+      max-width: 768px;
+      width: 100%;
+      padding: 10px 20px;
+    }
+
+    .settings {
+      max-width: 768px;
+      width: 100%;
+      height: calc(100% - 54px);
+      overflow-y: auto;
+      background-color: #161617;
+      padding: 10px 20px;
+    }
+
+    .outline-btn {
+      max-width: 350px;
+      width: 100%;
+      margin-top: auto;
+      margin-left: auto;
+    }
+  }
 }
