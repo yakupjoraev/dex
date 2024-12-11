@@ -23,6 +23,30 @@
       <a class="logo" href="#"><img class="log__img" width="92" src="./img/logo.svg" alt="logo"></a>
     </div>
 
+    <div class="nav__filters">
+      <div class="filters-head__actions">
+        <div class="filters-head__balance">
+          <p class="filters-head__balance-text">Balance</p>
+          <p class="filters-head__balance-sum">$6K</p>
+        </div>
+        <div class="filters-head__action">
+          <button type="button"
+            class="filters-head__action-btn filters-head__action-btn--not-border filters-head__action-btn--large active">
+            <img width="16" src="./img/icons/deposit-icon.svg" alt="icon">
+            <span>Deposit</span>
+          </button>
+        </div>
+
+        <div class="filters-head__action">
+          <button type="button"
+            class="filters-head__action-btn filters-head__action-btn--not-border filters-head__action-btn--large filters-head__action-btn--white">
+            <img width="22" src="./img/icons/wallet-icon.svg" alt="icon">
+            <span>Wallet</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
     <div class="aside__main">
       <nav class="nav aside-nav">
         <ul class="nav__list">
@@ -97,18 +121,6 @@
               <img class="nav__link-arrow" src="./img/icons/nav-arrow.svg" alt="arrow icon">
             </a>
           </li>
-
-          <li class="nav__item">
-            <a class="nav__link" href="#">
-              <div class="nav__link-icon">
-                <img src="./img/icons/nav-7.svg" width="20" height="20" alt="icon">
-              </div>
-
-              <p class="nav__link-text">Wallet Manager</p>
-
-              <img class="nav__link-arrow" src="./img/icons/nav-arrow.svg" alt="arrow icon">
-            </a>
-          </li>
         </ul>
 
         <div class="nav__border"></div>
@@ -117,7 +129,7 @@
           <li class="nav__item">
             <a class="nav__link" href="#">
               <div class="nav__link-icon">
-                <img src="./img/icons/settings.svg" width="20" height="20" alt="icon">
+                <img src="./img/icons/nav-7.svg" width="20" height="20" alt="icon">
               </div>
 
               <p class="nav__link-text">Settings</p>
@@ -140,32 +152,14 @@
     </div>
 
 
-    <div class="nav__filters">
-      <div class="filters-head__actions">
-        <div class="filters-head__balance">
-          <p class="filters-head__balance-text">Balance</p>
-          <p class="filters-head__balance-sum">$6K</p>
-        </div>
-        <div class="filters-head__action">
-          <button type="button"
-            class="filters-head__action-btn filters-head__action-btn--not-border filters-head__action-btn--large active"><span>Deposit</span>
-            <img width="12" height="12" src="./img/icons/deposit-icon.svg" alt="icon"></button>
-        </div>
 
-        <div class="filters-head__action">
-          <button type="button"
-            class="filters-head__action-btn filters-head__action-btn--not-border filters-head__action-btn--large "><span>Wallet</span>
-            <img width="12" height="12" src="./img/icons/wallet-icon.svg" alt="icon"></button>
-        </div>
-      </div>
-    </div>
 
     <div class="aside__footer">
       <a class="aside__banner" href="#">
         <h3 class="aside__banner-label">sniper function</h3>
 
         <div class="aside__banner-picture">
-          <img width="84" height="84" src="./img/aside-banner-pic.png" alt=" sniper function pic">
+          <img width="48" src="./img/aside-banner-pic.png" alt=" sniper function pic">
         </div>
       </a>
     </div>
@@ -353,39 +347,23 @@
         <div class="filters-head">
   <form action="#" class="filters-head__form">
     <div class="filters-head__actions filters-head__row--full desktop-dn">
-      <div class="filters-head__action">
-        <button type="button"
-          class="filters-head__action-btn filters-head__action-btn--large active"><span>Deposit</span>
-          <img width="12" height="12" src="./img/icons/deposit-icon.svg" alt="icon"></button>
+
+      <div class="filters-head__balance">
+        <p class="filters-head__balance-sum">$ 6,250.00</p>
+        <p class="filters-head__balance-text">Balance</p>
       </div>
 
       <div class="filters-head__action">
+        <button type="button" class="filters-head__action-btn filters-head__action-btn--large active">
+          <img width="16" height="16" src="./img/icons/deposit-icon.svg" alt="icon">
+          <span>Deposit</span>
+        </button>
+      </div>
+
+      <!-- <div class="filters-head__action">
         <button type="button" class="filters-head__action-btn filters-head__action-btn--large "><span>Wallet</span>
           <img width="12" height="12" src="./img/icons/wallet-icon.svg" alt="icon"></button>
-      </div>
-    </div>
-
-    <div class="filters-head__row">
-      <div class="filters-head__icons  desktop-dn">
-        <!-- если добавить класс active то иконка покраситься -->
-        <button type="button" class="filters-head__btn filters-head__btn--watchlist">
-          <img width="16" height="16" src="./img/icons/watchlist.svg" alt="watchlist icon">
-        </button>
-        <button type="button" class="filters-head__btn filters-head__btn--positions">
-          <img width="16" height="16" src="./img/icons/positions.svg" alt="positions icon">
-        </button>
-      </div>
-
-      <div class="filters-head__actions">
-        <div class="filters-head__action">
-          <button type="button" class="filters-head__action-btn open-modal-btn"
-            data-modal-id="filters-modal"><span>Filters</span></button>
-        </div>
-
-        <div class="filters-head__action">
-          <button type="button" class="filters-head__action-btn active"><span>Advanced</span></button>
-        </div>
-      </div>
+      </div> -->
     </div>
 
     <div class="slider swiper">
@@ -451,13 +429,36 @@
     <div class="filters-head__row filters-head__row--full">
       <div class="filters-head__naming heading">
         <h1 class="filters-head__name heading__title">New Pairs</h1>
-        <img width="16" height="16" src="./img/icons/New Pairs.svg" alt="icon">
+        <img width="20" height="20" src="./img/icons/New Pairs.svg" alt="icon">
       </div>
 
       <div class="filters-head__input-wrapper">
         <p class="filters-head__input-text">Quick Buy</p>
         <input class="filters-head__input" type="number" value="1000">
         <div class="filters-head__input-icon">$</div>
+      </div>
+    </div>
+
+    <div class="filters-head__row">
+      <div class="filters-head__icons  desktop-dn">
+        <!-- если добавить класс active то иконка покраситься -->
+        <button type="button" class="filters-head__btn filters-head__btn--watchlist">
+          <img width="16" height="16" src="./img/icons/watchlist.svg" alt="watchlist icon">
+        </button>
+        <button type="button" class="filters-head__btn filters-head__btn--positions">
+          <img width="16" height="16" src="./img/icons/positions.svg" alt="positions icon">
+        </button>
+      </div>
+
+      <div class="filters-head__actions">
+        <div class="filters-head__action">
+          <button type="button" class="filters-head__action-btn open-modal-btn"
+            data-modal-id="filters-modal"><span>Filters</span></button>
+        </div>
+
+        <div class="filters-head__action">
+          <button type="button" class="filters-head__action-btn active"><span>Advanced</span></button>
+        </div>
       </div>
     </div>
   </form>
@@ -1139,7 +1140,7 @@
     <div class="filters-head__row filters-head__row--full filters-head__row--justify">
       <div class="filters-head__naming heading">
         <h1 class="filters-head__name heading__title">Settings</h1>
-        <img width="16" height="16" src="./img/icons/Settings green.svg" alt="icon">
+        <img width="20" height="20" src="./img/icons/Settings green.svg" alt="icon">
       </div>
 
       <button type="button" class="btn btn--red-outline"><span>delete account</span></button>
@@ -1607,15 +1608,31 @@
     <ul class="footer__list">
       <li class="footer__item active">
         <a class="footer__link" href="#">
-          <img class="footer__link-img" width="20" height="20" src="./img/footer/deposit.svg" alt="Deposit icon">
+          <img class="footer__link-img" width="22" src="./img/footer/main.svg" alt="Main icon">
 
-          <p class="footer__link-text">Deposit</p>
+          <p class="footer__link-text">Main</p>
         </a>
       </li>
 
       <li class="footer__item">
         <a class="footer__link" href="#">
-          <img class="footer__link-img" width="20" height="20" src="./img/footer/referrals.svg" alt="Referrals icon">
+          <img class="footer__link-img" width="21" src="./img/footer/explore.svg" alt="Explore icon">
+
+          <p class="footer__link-text">Explore</p>
+        </a>
+      </li>
+
+      <li class="footer__item">
+        <a class="footer__link" href="#">
+          <img class="footer__link-img" width="20" src="./img/footer/sniper.svg" alt="Sniper icon">
+
+          <p class="footer__link-text">Sniper</p>
+        </a>
+      </li>
+
+      <li class="footer__item">
+        <a class="footer__link" href="#">
+          <img class="footer__link-img" width="20" src="./img/footer/referrals.svg" alt="Referrals icon">
 
           <p class="footer__link-text">Referrals</p>
         </a>
@@ -1623,25 +1640,9 @@
 
       <li class="footer__item">
         <a class="footer__link" href="#">
-          <img class="footer__link-img" width="20" height="20" src="./img/footer/support.svg" alt="Support icon">
+          <img class="footer__link-img" width="20" src="./img/footer/wallet.svg" alt="Wallet icon">
 
-          <p class="footer__link-text">Support</p>
-        </a>
-      </li>
-
-      <li class="footer__item">
-        <a class="footer__link" href="#">
-          <img class="footer__link-img" width="20" height="20" src="./img/footer/protfolio.svg" alt="Protfolio icon">
-
-          <p class="footer__link-text">Protfolio</p>
-        </a>
-      </li>
-
-      <li class="footer__item">
-        <a class="footer__link" href="#">
-          <img class="footer__link-img" width="20" height="20" src="./img/footer/sniper.svg" alt="Sniper icon">
-
-          <p class="footer__link-text">Sniper</p>
+          <p class="footer__link-text">Wallet</p>
         </a>
       </li>
     </ul>

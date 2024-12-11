@@ -1,6 +1,6 @@
 .filters-head {
   width: 100%;
-  padding: 12px 0;
+  padding: 12px 0 0;
   border-top: 1px solid var(--graphite);
 
   @media (min-width: $breakpoint992) {
@@ -15,9 +15,17 @@
     row-gap: 12px;
     width: 100%;
 
+    &--mb {
+      margin-bottom: 10px;
+    }
+
     @media (min-width: $breakpoint992) {
-      flex-direction: row-reverse;
+      flex-direction: row;
       column-gap: 12px;
+
+      &--reverse {
+        flex-direction: row-reverse;
+      }
     }
   }
 
@@ -78,7 +86,17 @@
     align-items: center;
     column-gap: 6px;
     margin-left: auto;
-    // width: 100%;
+    width: 100%;
+
+    @media (min-width: $breakpoint992) {
+      &--flex-end {
+        justify-content: flex-end;
+
+        .filters-head__action {
+          width: fit-content;
+        }
+      }
+    }
   }
 
   // .filters-head__action
@@ -109,9 +127,13 @@
     text-align: center;
     color: var(--text2);
 
+    @media (min-width: $breakpoint992) {
+      max-width: 146px;
+    }
+
     img {
       transition: filter 0.2s linear;
-      filter: brightness(0) saturate(100%) invert(65%) sepia(5%) saturate(740%) hue-rotate(193deg) brightness(91%) contrast(87%);
+      // filter: brightness(0) saturate(100%) invert(65%) sepia(5%) saturate(740%) hue-rotate(193deg) brightness(91%) contrast(87%);
     }
 
     &--not-border {
@@ -119,7 +141,11 @@
     }
 
     &--large {
-      padding: 12px;
+      padding: 9px 12px;
+    }
+
+    &--white {
+      color: var(--text-1);
     }
 
     &.active {
@@ -223,6 +249,7 @@
 
   // .filters-head__input-text
   &__input-text {
+    white-space: nowrap;
     font-size: 12px;
     color: var(--text2);
   }

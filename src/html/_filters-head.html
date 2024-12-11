@@ -1,39 +1,23 @@
 <div class="filters-head">
   <form action="#" class="filters-head__form">
     <div class="filters-head__actions filters-head__row--full desktop-dn">
-      <div class="filters-head__action">
-        <button type="button"
-          class="filters-head__action-btn filters-head__action-btn--large active"><span>Deposit</span>
-          <img width="12" height="12" src="./img/icons/deposit-icon.svg" alt="icon"></button>
+
+      <div class="filters-head__balance">
+        <p class="filters-head__balance-sum">$ 6,250.00</p>
+        <p class="filters-head__balance-text">Balance</p>
       </div>
 
       <div class="filters-head__action">
+        <button type="button" class="filters-head__action-btn filters-head__action-btn--large active">
+          <img width="16" height="16" src="./img/icons/deposit-icon.svg" alt="icon">
+          <span>Deposit</span>
+        </button>
+      </div>
+
+      <!-- <div class="filters-head__action">
         <button type="button" class="filters-head__action-btn filters-head__action-btn--large "><span>Wallet</span>
           <img width="12" height="12" src="./img/icons/wallet-icon.svg" alt="icon"></button>
-      </div>
-    </div>
-
-    <div class="filters-head__row">
-      <div class="filters-head__icons  desktop-dn">
-        <!-- если добавить класс active то иконка покраситься -->
-        <button type="button" class="filters-head__btn filters-head__btn--watchlist">
-          <img width="16" height="16" src="./img/icons/watchlist.svg" alt="watchlist icon">
-        </button>
-        <button type="button" class="filters-head__btn filters-head__btn--positions">
-          <img width="16" height="16" src="./img/icons/positions.svg" alt="positions icon">
-        </button>
-      </div>
-
-      <div class="filters-head__actions">
-        <div class="filters-head__action">
-          <button type="button" class="filters-head__action-btn open-modal-btn"
-            data-modal-id="filters-modal"><span>Filters</span></button>
-        </div>
-
-        <div class="filters-head__action">
-          <button type="button" class="filters-head__action-btn active"><span>Advanced</span></button>
-        </div>
-      </div>
+      </div> -->
     </div>
 
     <div class="slider swiper">
@@ -99,13 +83,36 @@
     <div class="filters-head__row filters-head__row--full">
       <div class="filters-head__naming heading">
         <h1 class="filters-head__name heading__title">New Pairs</h1>
-        <img width="16" height="16" src="./img/icons/New Pairs.svg" alt="icon">
+        <img width="20" height="20" src="./img/icons/New Pairs.svg" alt="icon">
       </div>
 
       <div class="filters-head__input-wrapper">
         <p class="filters-head__input-text">Quick Buy</p>
         <input class="filters-head__input" type="number" value="1000">
         <div class="filters-head__input-icon">$</div>
+      </div>
+    </div>
+
+    <div class="filters-head__row">
+      <div class="filters-head__icons  desktop-dn">
+        <!-- если добавить класс active то иконка покраситься -->
+        <button type="button" class="filters-head__btn filters-head__btn--watchlist">
+          <img width="16" height="16" src="./img/icons/watchlist.svg" alt="watchlist icon">
+        </button>
+        <button type="button" class="filters-head__btn filters-head__btn--positions">
+          <img width="16" height="16" src="./img/icons/positions.svg" alt="positions icon">
+        </button>
+      </div>
+
+      <div class="filters-head__actions">
+        <div class="filters-head__action">
+          <button type="button" class="filters-head__action-btn open-modal-btn"
+            data-modal-id="filters-modal"><span>Filters</span></button>
+        </div>
+
+        <div class="filters-head__action">
+          <button type="button" class="filters-head__action-btn active"><span>Advanced</span></button>
+        </div>
       </div>
     </div>
   </form>

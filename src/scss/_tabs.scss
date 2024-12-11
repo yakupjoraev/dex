@@ -285,6 +285,10 @@
     align-items: center;
     column-gap: 10px;
     justify-content: space-between;
+
+    @media (min-width: $breakpoint992) {
+      margin-left: auto;
+    }
   }
 
   // .tab__time

@@ -1,4 +1,9 @@
 .terminal {
+  @media (min-width: $breakpoint992) {
+    .terminal__form {
+      padding: 12px 20px;
+    }
+  }
 
   .tab__content.desktop-dn {
     display: block;
@@ -8,15 +13,38 @@
     }
   }
 
-  @media (min-width: 1540px) {
-    width: calc(100% - 394px);
+  .tab .tab__content:nth-child(2) {
+    border: 0;
+  }
+
+  .tab .tab__contents {
+    // width: 100%;
+
+    @media (min-width: $breakpoint992) {
+      width: calc(100% - 320px);
+    }
+
+    @media (min-width: 1540px) {
+      width: calc(100% - 394px);
+    }
+  }
+
+  .tab .tab__head {
+    // width: 100%;
+
+    @media (min-width: $breakpoint992) {
+      width: calc(100% - 320px);
+    }
+
+    @media (min-width: 1540px) {
+      width: calc(100% - 394px);
+    }
   }
 
   @media (min-width: $breakpoint992) {
     display: flex;
     flex-direction: column;
     align-content: baseline;
-    width: calc(100% - 320px);
     margin-bottom: -20px;
     // padding-left: 20px;
 
@@ -121,8 +149,6 @@
     @media (min-width: $breakpoint992) {
       height: 394px;
       margin: 0;
-      padding-left: 20px;
-      padding-right: 20px;
     }
   }
 
@@ -273,7 +299,6 @@
     margin: 0;
     margin-top: 0;
     padding: 24px 20px;
-    border-top: 1px solid #212121;
     border-left: 1px solid #212121;
 
     .subtabs__head {
@@ -321,9 +346,6 @@
 
 .filters-head--terminal {
   @media (min-width: $breakpoint992) {
-    width: calc(100% - 320px);
-    // border-right: 1px solid #212121;
-    // border-left: 1px solid #212121;
 
     .filters-head__row {
       flex-wrap: wrap;
@@ -333,12 +355,29 @@
   }
 
   @media (min-width: 1540px) {
-    width: calc(100% - 394px);
 
     .filters-head__row {
       flex-wrap: nowrap;
       row-gap: 20px;
       column-gap: 60px;
     }
+  }
+}
+
+.filters-head--terminal {
+  @media (min-width: $breakpoint992) {
+    width: calc(100% - 320px);
+
+    .filters-head__actions {
+      width: auto;
+    }
+
+    .filters-head__action {
+      width: auto;
+    }
+  }
+
+  @media (min-width: 1540px) {
+    width: calc(100% - 394px);
   }
 }

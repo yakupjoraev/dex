@@ -1,6 +1,9 @@
 .referrals {
   padding: 50px 0;
 
+  @media (min-width: $breakpoint992) {
+    padding: 50px 20px;
+  }
 
   .logo {
     margin-bottom: 32px;
