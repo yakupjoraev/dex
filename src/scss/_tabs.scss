@@ -602,3 +602,14 @@
 .tab__content-label {
   margin-bottom: 20px;
 }
+
+.tab__two-columns {
+
+  @media (min-width: $breakpoint1450) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+  }
+
+  @media (min-width: $breakpoint992) {}
+}

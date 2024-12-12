@@ -49,6 +49,13 @@
   justify-content: flex-end;
   padding: 0;
 
+  &.show {
+    @media (min-width: $breakpoint992) {
+      top: 68px;
+      border-top: 1px solid #212121;
+    }
+  }
+
   @media (min-width: $breakpoint992) {
     background: rgba(4, 4, 4, 0.6);
     backdrop-filter: blur(0);
@@ -64,6 +71,7 @@
     @media (min-width: $breakpoint992) {
       max-width: 394px;
       min-width: 394px;
+      min-height: calc(100% - 68px);
     }
   }
 }
@@ -95,6 +103,10 @@
 
   &--mini {
     max-width: 544px;
+
+    .modal__inner {
+      min-height: fit-content;
+    }
   }
 
   @media (min-width: $breakpoint992) {
@@ -110,8 +122,8 @@
 
 .close-modal-btn {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 26px;
+  right: 20px;
   background-color: transparent;
   border: 0;
   outline: 0;

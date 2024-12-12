@@ -429,3 +429,7 @@
     color: var(--text-1);
   }
 }
+
+.wallet-actions__icon--green {
+  filter: invert(42%) sepia(100%) saturate(362%) hue-rotate(120deg) brightness(93%) contrast(102%)
+}

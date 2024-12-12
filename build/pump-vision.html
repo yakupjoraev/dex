@@ -180,9 +180,6 @@
 
     <div class="header__right">
       <div class="header__actions">
-        <button type="button" class="header__action">
-          <img class="header__action-icon" width="16" height="16" src="./img/icons/notif.svg" alt="notif icon">
-        </button>
 
         <div class="header__action mobile-dn">
           <button type="button" class="header__action">
@@ -197,6 +194,10 @@
               alt="positions icon">
           </button>
         </div>
+
+        <button type="button" class="header__action">
+          <img class="header__action-icon" width="16" height="16" src="./img/icons/notif.svg" alt="notif icon">
+        </button>
       </div>
 
       <div class="header__account mobile-dn">
@@ -345,7 +346,27 @@
       <!-- Main Page -->
       <main>
         <div class="filters-head">
-  <form action="#" class="filters-head__form filters-head__form--reverse">
+  <form action="#" class="filters-head__form filters-head__form--mb  filters-head__form--reverse">
+    <div class="filters-head__actions filters-head__row--full desktop-dn">
+
+      <div class="filters-head__balance">
+        <p class="filters-head__balance-sum">$ 6,250.00</p>
+        <p class="filters-head__balance-text">Balance</p>
+      </div>
+
+      <div class="filters-head__action">
+        <button type="button" class="filters-head__action-btn filters-head__action-btn--large active">
+          <img width="16" height="16" src="./img/icons/deposit-icon.svg" alt="icon">
+          <span>Deposit</span>
+        </button>
+      </div>
+
+      <!-- <div class="filters-head__action">
+        <button type="button" class="filters-head__action-btn filters-head__action-btn--large "><span>Wallet</span>
+          <img width="12" height="12" src="./img/icons/wallet-icon.svg" alt="icon"></button>
+      </div> -->
+    </div>
+
     <div class="filters-head__row">
       <div class="filters-head__icons desktop-dn">
         <!-- если добавить класс active то иконка покраситься -->
@@ -363,7 +384,7 @@
         </div>
 
         <div class="filters-head__action">
-          <button type="button" class="filters-head__action-btn active"><span>Advanced</span></button>
+          <button type="button" class="filters-head__action-btn"><span>Advanced</span></button>
         </div>
       </div>
     </div>
@@ -371,7 +392,7 @@
     <div class="filters-head__row filters-head__row--full">
       <div class="filters-head__naming heading">
         <h1 class="filters-head__name heading__title">Pump Vision</h1>
-        <img width="20" height="20" src="./img/icons/Pump Vision.svg" alt="icon">
+        <img class="mobile-dn" width="20" height="20" src="./img/icons/Pump Vision.svg" alt="icon">
       </div>
 
       <div class="filters-head__input-wrapper">
