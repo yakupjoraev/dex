@@ -36,6 +36,10 @@
   .table td:last-child {
     padding-right: 0;
   }
+
+  .table th:last-child {
+    text-align: right;
+  }
 }
 
 .modal.show {

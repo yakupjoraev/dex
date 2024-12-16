@@ -1,4 +1,6 @@
 .table-wrapper {
+  overflow: hidden;
+  overflow-x: auto;
   padding: 12px 0;
 
   @media (min-width: $breakpoint992) {
@@ -15,8 +17,18 @@
   color: var(--text2);
 
   .mobile-dn {
+    display: none;
+
     @media (min-width: $breakpoint992) {
       display: table-cell;
+    }
+  }
+
+  .desktop-dn {
+    display: table-cell;
+
+    @media (min-width: $breakpoint992) {
+      display: none;
     }
   }
 
@@ -49,6 +61,7 @@
   }
 
   td {
+    min-width: 70px;
     padding: 8px 10px;
     text-align: right;
 
@@ -157,9 +170,14 @@
   // .table__bold-text
 
   &__bold-text {
+    white-space: nowrap;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 12px;
     color: var(--text-1);
+
+    @media (min-width: $breakpoint992) {
+      font-size: 14px;
+    }
 
     &.green-text {
       color: var(--green-2);

@@ -148,6 +148,12 @@
       color: var(--text-1);
     }
 
+    &--mini {
+      min-width: 120px;
+      padding: 6px 8px;
+      min-height: 32px;
+    }
+
     &.active {
       background-color: var(--green-2);
       border-color: var(--green-2);
@@ -177,6 +183,12 @@
     @media (min-width: $breakpoint992) {
       min-width: 146px;
       min-height: 40px;
+
+      &--mini {
+        min-width: 120px;
+        padding: 6px 8px;
+        min-height: 32px;
+      }
     }
   }
 
