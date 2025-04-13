@@ -146,6 +146,9 @@
 
   &__item-decor {
     position: absolute;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
@@ -159,6 +162,8 @@
       left: auto !important;
       right: 10px !important;
     }
+
+
   }
 
   // .input__item-delete

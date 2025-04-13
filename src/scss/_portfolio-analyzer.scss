@@ -4,6 +4,12 @@
     justify-content: space-between;
   }
 
+  .tab__two-columns--b-b {
+    &:not(:last-child) {
+      border-bottom: 1px solid #212121;
+    }
+  }
+
   @media (min-width: $breakpoint992) {
     position: relative;
     border-top: 1px solid #212121;
@@ -61,6 +67,10 @@
       border-left: 1px solid #212121;
     }
 
+    .tab__content--h-full {
+      height: 100%;
+    }
+
     .tab__graphik {
       flex-direction: row;
       column-gap: 10px;
@@ -88,6 +98,10 @@
     .tab__content--absulate {
       width: 394px;
       height: auto;
+    }
+
+    .tab__content--h-full {
+      height: 100%;
     }
 
     .tab__contents {

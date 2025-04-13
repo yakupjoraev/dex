@@ -601,6 +601,10 @@
 
 .tab__content-label {
   margin-bottom: 20px;
+
+  &--not-margin {
+    margin-bottom: 0;
+  }
 }
 
 .tab__two-columns {
@@ -612,4 +616,9 @@
   }
 
   @media (min-width: $breakpoint992) {}
+}
+
+.tab__items--max-w-432 {
+  max-width: 432px;
+  width: 100%;
 }
